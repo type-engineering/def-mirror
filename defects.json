@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-22T12:25:50+00:00",
+  "validUntil": "2026-09-29T12:25:50+00:00",
+  "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
+  "sourceSha256": "6a4261cedf7e1fc2569f6e78776b9760a45e771868d70e09eb2b9f387ed8cdd8",
+  "extractSha256": "9af6a1c22d62597b9623752f01d4036c724fb426deb3eee2390d132c6c085a6a",
+  "defects": [
+    {
+      "id": "9c3230fbb5ed",
+      "severity": "warning",
+      "station": 5,
+      "name": "Froschfelsen"
+    },
+    {
+      "id": "470000fba98f",
+      "severity": "warning",
+      "station": 19,
+      "name": "Skidenkmal"
+    },
+    {
+      "id": "4e49aed560ff",
+      "severity": "warning",
+      "station": 105,
+      "name": "Prinzenlaube"
+    },
+    {
+      "id": "bd6d972ba63c",
+      "severity": "warning",
+      "station": 111,
+      "name": "Steinbergalm"
+    },
+    {
+      "id": "1ae348cfee8a",
+      "severity": "warning",
+      "station": 138,
+      "name": "Braunseck"
+    },
+    {
+      "id": "3712530976f7",
+      "severity": "warning",
+      "station": 143,
+      "name": "Köte Schindelkopf"
+    },
+    {
+      "id": "ee50d788551c",
+      "severity": "warning",
+      "station": 149,
+      "name": "Herzweg Mühlenberg"
+    },
+    {
+      "id": "53550a3d0aaa",
+      "severity": "warning",
+      "station": 155,
+      "name": "Rehberger Grabenhaus"
+    },
+    {
+      "id": "5d8016c8556c",
+      "severity": "warning",
+      "station": 193,
+      "name": "Stahlquelle"
+    },
+    {
+      "id": "03fb54c2b3c1",
+      "severity": "warning",
+      "station": 206,
+      "name": "Hahnestein"
+    },
+    {
+      "id": "cd6047fea9ba",
+      "severity": "warning",
+      "station": 208,
+      "name": "Burgruine Grillenburg"
+    },
+    {
+      "id": "611325540502",
+      "severity": "warning",
+      "station": 210,
+      "name": "Schöne Aussicht Hainrode"
+    },
+    {
+      "id": "005e2a525609",
+      "severity": "warning",
+      "station": 219,
+      "name": "Wippertalsperre"
+    },
+    {
+      "id": "0fcc14381b86",
+      "severity": "warning",
+      "station": 222,
+      "name": "Bergbaulehrpfad Wettelrode"
+    }
+  ],
+  "notices": [
+    {
+      "id": "12e85595d773",
+      "severity": "info",
+      "station": 149,
+      "text": "ACHTUNG! Ab 1. Januar 2025 versetzen wir unsere numerische Stempelstelle Nummer 149 vom aktuellen Standort „Kleine Oker“ zum neuen Standort „Mühlenberg Altenauer Herzweg“ N51.803286 E 10.450144"
+    },
+    {
+      "id": "6c77f1668ef1",
+      "severity": "info",
+      "station": 163,
+      "text": "Die Stempelstelle 163 Bremerklippe wurde 2,7 Kilometer entfernt an den Kaiserweg versetzt."
+    },
+    {
+      "id": "6b4291d81c11",
+      "severity": "info",
+      "station": 43,
+      "text": "Bei der Stempelstelle 43 Hohe Tür – Wasserscheide Weser-Elbe ist der Wanderweg um die Steinatalsperre gesperrt! Wanderer sollten den gegenüber der Steinatalsperre liegenden Weg als Ausweichroute wählen"
+    },
+    {
+      "id": "35b0a71f461a",
+      "severity": "info",
+      "station": 99,
+      "text": "Die Stempelstelle HWN 99 Hörninger Sattelköpfe wurde aufgrund von ständigen Sachbeschädigungen dauerhaft zur Harzer Holzdampflok oberhalb von Neustadt/Harz versetzt."
+    },
+    {
+      "id": "f477a6ae5b17",
+      "severity": "info",
+      "station": 141,
+      "text": "Die Stempelstelle HWN 141 Lasfelder Tränke wurde dauerhaft an den Oberen Hahnebalzer Teich an den Harzer Baudensteig versetzt."
+    },
+    {
+      "id": "85b1cd8e7bd2",
+      "severity": "info",
+      "station": 91,
+      "text": "Zutritt zum HWN 91 Weltkulturerbe Rammelsberg täglich 9:00 Uhr bis 17:00 Uhr."
+    },
+    {
+      "id": "f8f77092b06b",
+      "severity": "info",
+      "station": 146,
+      "text": "Die Stempelstelle 146 – Großes Wehr ist ab Parkplatz Stieglitzecke aufgrund der Gefahr von Todholzabbruch nicht zu erreichen. Ein guter Ausgangspunkt ist das Sperberhaier Dammhaus über den Dammgraben."
+    }
+  ],
+  "closures": [
+    {
+      "id": "cca55c45cae3",
+      "severity": "critical",
+      "title": "Iberger Tropfsteinhöhle"
+    },
+    {
+      "id": "5e5eb0c7bfe9",
+      "severity": "critical",
+      "title": "Märchenweg Wernigerode"
+    },
+    {
+      "id": "9a86e8f347f1",
+      "severity": "critical",
+      "title": "Harlyturm"
+    },
+    {
+      "id": "85022c6eaf46",
+      "severity": "critical",
+      "title": "Aholzwarte (entfällt vorläufig!)"
+    },
+    {
+      "id": "44aa54ec5741",
+      "severity": "critical",
+      "title": "Bückeberg entfällt!"
+    },
+    {
+      "id": "5ee7a6edfe63",
+      "severity": "critical",
+      "title": "Aufgrund der Bauarbeiten am Schloss Wernigerode wurde der Stempelkasten vor das untere Schlosstor versetzt."
+    },
+    {
+      "id": "2a51cda927dd",
+      "severity": "critical",
+      "title": "Der Sonderstempel zum Klosterwanderweg am Kloster Michaelstein befindet sich an der Hauswand zwischen dem Waschhaus und der Musikscheune."
+    },
+    {
+      "id": "93d6915a4b4d",
+      "severity": "critical",
+      "title": "Die Aholzwarte in Quedlinburg entfällt zukünftig für das Themenheft „Rund um Bad Suderode, Gernrode und die Welterbestadt Quedlinburg“"
+    },
+    {
+      "id": "e74719ccd585",
+      "severity": "critical",
+      "title": "Der Jubiläumstempel „Butterekuppe“ wurde versetzt und befindet sich in einer Schutzhütte auf dem Kaiser-Otto-Höhenweg in Richtung Wallhausen"
+    }
+  ]
+}
