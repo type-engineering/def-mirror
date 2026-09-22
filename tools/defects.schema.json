@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:def-mirror:defects:2",
+  "title": "Defekt-Feed, Schema 2",
+  "description": "Eingefrorener Vertrag zwischen Mirror und Client. Aenderungen an diesem Dokument sind Schema-Aenderungen: ein neues Pflichtfeld oder ein geaenderter Typ verlangt schemaVersion 3, weil ausgelieferte Clients den alten Stand weiterlesen.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "generatedAt",
+    "validUntil",
+    "source",
+    "defects",
+    "notices",
+    "closures"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "validUntil": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Nach diesem Zeitpunkt darf der Client keine Aussage ueber den Zustand mehr treffen (Status = unbekannt). Die Frist gehoert damit den Daten und nicht dem Client-Binary; sie begrenzt zugleich das Schadensfenster eines kompromittierten Schluessels."
+    },
+    "source": {
+      "type": "string",
+      "format": "uri"
+    },
+    "sourceSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "SHA-256 der abgerufenen Quellseite. Wer sie selbst abruft, kann vergleichen; die Seite selbst wird nicht mitveröffentlicht."
+    },
+    "extractSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "SHA-256 des veröffentlichten Quell-Extrakts (defects-source.txt): die geernteten Zeilen vor der Einordnung. Bindeglied zwischen Daten und Ableitung."
+    },
+    "defects": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/stampEntry"
+      }
+    },
+    "notices": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/stampEntry"
+      }
+    },
+    "closures": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/closureEntry"
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{12}$",
+      "description": "Inhaltsabgeleitet und stabil: derselbe Eintrag hat morgen dieselbe id, unabhaengig von seiner Listenposition."
+    },
+    "severity": {
+      "enum": [
+        "info",
+        "warning",
+        "critical"
+      ],
+      "description": "Rein kategoriebasiert, nicht aus dem Text geraten."
+    },
+    "stampEntry": {
+      "type": "object",
+      "required": [
+        "id",
+        "severity",
+        "station"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "severity": {
+          "$ref": "#/$defs/severity"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "station": {
+          "$ref": "#/$defs/station"
+        }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "name"
+          ]
+        },
+        {
+          "required": [
+            "text"
+          ]
+        }
+      ]
+    },
+    "closureEntry": {
+      "type": "object",
+      "required": [
+        "id",
+        "severity",
+        "title"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "severity": {
+          "$ref": "#/$defs/severity"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        }
+      }
+    },
+    "station": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 222,
+      "description": "Nummer der Station, auf die sich der Eintrag bezieht (Join-Key beim Client). Der Deckel ist die Obergrenze des Nummernraums; ein Eintrag ausserhalb ist ein Parse-Fehler, keine Station."
+    }
+  }
+}

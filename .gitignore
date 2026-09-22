@@ -1,0 +1,7 @@
+__pycache__/
+.venv/
+
+# Niemals Schlüsselmaterial — Sicherheitsnetz gegen ein versehentliches `git add .`
+*.pem
+*.key
+.DS_Store

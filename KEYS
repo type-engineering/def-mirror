@@ -1,0 +1,26 @@
+# Öffentliche Schlüssel dieses Feeds
+#
+# Format je Zeile: <keyId> <64 Hex-Zeichen>   ("#" leitet einen Kommentar ein)
+#
+# Diese Datei ist ein Vertrauensanker. Sie ist versioniert, das Datum ihrer
+# Einträge steht damit öffentlich in der Commit-Historie: ein nachträglich
+# untergeschobener Schlüssel müsste diese Historie umschreiben, was jeder
+# sieht, der eine Kopie hat.
+#
+# Dieselben Schlüssel gehören in das Client-Binary, und ihre Fingerabdrücke
+# gehören dort in den Info-Bereich — nur so lässt sich von Hand vergleichen,
+# ob beide Orte dasselbe sagen. Weichen sie voneinander ab, ist das ein Alarm
+# und kein Versehen, das man still anpasst.
+#
+# Prüfen:  python3 tools/verify.py --envelope defects.signed.json --keys KEYS
+#
+# Die privaten Teile entstanden von Hand und offline; sie liegen in keinem
+# Repository und in keiner Cloud. k2 ist die Reserve und kommt nicht in die
+# CI — eine Reserve neben dem aktiven Schlüssel wäre keine.
+#
+# Fingerabdrücke (sha256 der 32 öffentlichen Bytes, erste 16 Hex):
+#   k1  17a08820ba306a79
+#   k2  b2cde8b38816b3f2
+
+k1 b4b1af5eb82159512f5ae9e62f088996869cf408fa539a53694f63fdc3ea31df   # aktiv, signiert täglich, Epoche 1
+k2 9b230e7c5c14e52b8d1480758442e65741b057242c71ece98cb2ff237cf05f20   # Reserve, nie in der CI, Epoche 2

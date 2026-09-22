@@ -1,0 +1,109 @@
+# Täglicher Spiegellauf: Quelle ernten → signieren → prüfen → committen.
+#
+# Fail-closed an jeder Stelle. Der gefährlichste Fehler dieses Feeds ist nicht
+# der Abbruch, sondern der leere Datensatz: "keine Meldungen" liest sich wie
+# "alles in Ordnung". Deshalb bricht jeder Schritt lieber ab und lässt den
+# letzten guten Stand im Repo stehen, als etwas Halbes zu veröffentlichen.
+
+name: mirror
+
+on:
+  schedule:
+    # 06:00 UTC, täglich. GitHub führt Cron-Jobs unter Last verspätet aus;
+    # das ist hier folgenlos, weil generatedAt den tatsächlichen Laufzeitpunkt
+    # trägt und nicht diese Zeitangabe.
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+# Zwei gleichzeitige Läufe würden sich beim Push gegenseitig überschreiben.
+concurrency:
+  group: mirror
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: tools/requirements.txt
+
+      - name: Abhängigkeiten
+        run: python -m pip install --disable-pip-version-check -r tools/requirements.txt
+
+      # Ohne Schlüssel wird nicht veröffentlicht. Diese Prüfung steht vor dem
+      # Abruf, damit der Lauf nicht erst die Quelle belastet und dann scheitert.
+      - name: Schlüssel vorhanden?
+        env:
+          SIGNING_KEY_PEM: ${{ secrets.SIGNING_KEY_PEM }}
+        run: |
+          if [ -z "${SIGNING_KEY_PEM}" ]; then
+            echo "::error::Secret SIGNING_KEY_PEM fehlt — unsigniert wird nicht ausgeliefert."
+            exit 1
+          fi
+          if ! grep -vE '^[[:space:]]*#' KEYS | grep -q '[^[:space:]]'; then
+            echo "::error::KEYS enthält keinen öffentlichen Schlüssel — ohne Vertrauensanker ist die Auslieferung wertlos."
+            exit 1
+          fi
+
+      # Gate vor dem Netz: ein beschädigter Parser soll gar nicht erst die
+      # Gelegenheit bekommen, den veröffentlichten Stand zu überschreiben —
+      # besonders im Fall, in dem er still 0 statt der echten Einträge liefert.
+      # Läuft gegen eine erfundene Fixture, nicht gegen einen Abzug der Quelle.
+      - name: Regressionstest
+        run: python tools/test_harvest.py
+
+      - name: Ernten
+        run: python tools/harvest.py --out defects.json --source-out defects-source.txt
+
+      # Der leere Stand ist der Fehler, gegen den dieser Feed gebaut ist.
+      - name: Nicht leer?
+        run: |
+          python - <<'PY'
+          import json, sys
+          feed = json.load(open("defects.json", encoding="utf-8"))
+          anzahl = sum(len(feed.get(k, [])) for k in ("defects", "notices", "closures"))
+          if anzahl == 0:
+              print("::error::Der Lauf ergab null Einträge. Das sieht aus wie "
+                    "'alles in Ordnung' und ist fast immer ein Parser- oder "
+                    "Abruffehler. Der letzte gute Stand bleibt stehen.")
+              sys.exit(1)
+          print(f"{anzahl} Einträge geerntet.")
+          PY
+
+      - name: Signieren
+        env:
+          SIGNING_KEY_PEM: ${{ secrets.SIGNING_KEY_PEM }}
+        run: |
+          python tools/sign.py --payload defects.json --out defects.signed.json \
+                               --key-id k1 --key-env SIGNING_KEY_PEM
+
+      # Derselbe Lauf, den jeder Außenstehende machen kann. Er prüft, was die
+      # Pipeline eben erzeugt hat, gegen die öffentlichen Schlüssel: Byte-
+      # Gleichheit, Schema, Herkunft und Deckung. Scheitert er, ist der Stand
+      # fehlerhaft und wird nicht committet.
+      - name: Selbst prüfen
+        run: |
+          python tools/verify.py --envelope defects.signed.json --keys KEYS \
+                                 --expect-json defects.json --source defects-source.txt
+
+      - name: Committen, falls verändert
+        run: |
+          if git diff --quiet -- defects.json defects.signed.json defects-source.txt; then
+            echo "Unverändert — kein Commit."
+            exit 0
+          fi
+          git config user.name  "mirror"
+          git config user.email "type.engineering@posteo.de"
+          git add defects.json defects.signed.json defects-source.txt
+          git commit -m "Stand $(date -u +%Y-%m-%d)"
+          git push

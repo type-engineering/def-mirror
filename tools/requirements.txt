@@ -1,0 +1,4 @@
+cryptography>=43
+jsonschema>=4.23
+requests>=2.34
+beautifulsoup4>=4.15

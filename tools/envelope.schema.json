@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:def-mirror:defects-envelope:1",
+  "title": "Signierter Umschlag um den Defekt-Feed",
+  "type": "object",
+  "required": [
+    "envelopeVersion",
+    "alg",
+    "keyId",
+    "keyEpoch",
+    "payload",
+    "sig"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "envelopeVersion": {
+      "const": 1
+    },
+    "alg": {
+      "const": "ed25519"
+    },
+    "keyId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]{1,16}$",
+      "description": "Welcher oeffentliche Schluessel prueft. Eine unbekannte keyId ist ein Fehler, kein Grund zum Raten — genau so wirkt ein Widerruf."
+    },
+    "keyEpoch": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Aufsteigende Schluesselepoche. Der Client merkt sich die hoechste je gueltig gesehene und weist jede niedrigere ab — auch mit gueltiger Signatur. Das ist der Widerruf ohne Widerrufsserver."
+    },
+    "payload": {
+      "type": "string",
+      "contentEncoding": "base64",
+      "description": "Base64 der EXAKTEN Bytes von defects.json. Signiert werden die rohen Bytes, nicht diese Darstellung."
+    },
+    "sig": {
+      "type": "string",
+      "contentEncoding": "base64"
+    }
+  }
+}

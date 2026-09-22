@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head><meta charset="utf-8"><title>Synthetische Fixture</title></head>
+<body>
+<!--
+  Erfundene Testdaten. KEIN Abzug der Quellseite.
+
+  Die Quellseite wird bewusst nicht mitveröffentlicht (siehe README,
+  "Was die Signatur leistet — und was nicht"). Ein Fixture-Abzug wäre genau
+  diese Veröffentlichung durch die Hintertür. Deshalb bildet diese Datei nur
+  die Struktur nach, die der Parser greift, und füllt sie mit Stationen und
+  Namen, die es nicht gibt.
+
+  Jede Zeile steht für einen Fall, den harvest.py beherrschen muss; die
+  erwarteten Ergebnisse stehen in test_harvest.py.
+-->
+
+<!-- Beiwerk: muss NICHT geerntet werden. Greift der Selektor zu weit,
+     tauchen diese Texte im Extrakt auf und der Test schlägt fehl. -->
+<h1 class="page-title">Defektmeldungen</h1>
+<nav class="ct-breadcrumbs"><a href="/">Startseite</a><span>Defektmeldungen</span></nav>
+<p>Bitte melden Sie Defekte über das Kontaktformular.</p>
+<ul><li><span class="andere-klasse">HWN 200 Falscher Selektor</span></li></ul>
+
+<ul class="stk-block-icon-list__list">
+
+  <!-- 1 · Defekt: "HWN <Nr> <kurzer Name>", Nummer im gültigen Bereich. -->
+  <li><span class="stk-block-icon-list-item__text">HWN 12 Blauer Stein</span></li>
+
+  <!-- 2 · Defekt mit Soft-Hyphen und Zero-Width-Space mitten im Wort.
+       Ohne Bereinigung wären das zwei verschiedene Einträge an zwei Tagen. -->
+  <li><span class="stk-block-icon-list-item__text">HWN 13 Muster&shy;klippe&#8203;</span></li>
+
+  <!-- 3 · Defekt mit zerfasertem Weißraum über mehrere Zeilen. -->
+  <li><span class="stk-block-icon-list-item__text">HWN    14
+        Alte     Hütte</span></li>
+
+  <!-- 4 · Hinweis: Freitext, Nummer als "Stempelstelle Nummer <Nr>". -->
+  <li><span class="stk-block-icon-list-item__text">Die Stempelstelle Nummer 44 wird im Frühjahr an einen neuen Standort versetzt.</span></li>
+
+  <!-- 5 · Hinweis: Nummer als "HWN <Nr>" mitten im Satz. -->
+  <li><span class="stk-block-icon-list-item__text">Im Bereich der Stempelstelle HWN 45 Musterberg kann es zu Einschränkungen kommen.</span></li>
+
+  <!-- 6 · Beginnt wie ein Defekt, hat aber mehr als vier Wörter im Namen.
+       Gehört damit zu den Hinweisen, nicht zu den Defekten. -->
+  <li><span class="stk-block-icon-list-item__text">HWN 46 Ein ungewöhnlich langer Name mit vielen Wörtern</span></li>
+
+  <!-- 7 · Sperrung: gar keine Stationsnummer. -->
+  <li><span class="stk-block-icon-list-item__text">Beispielweg</span></li>
+
+  <!-- 8 · Sperrung mit längerem Text, ebenfalls ohne Nummer. -->
+  <li><span class="stk-block-icon-list-item__text">Der Rundweg am Musterteich ist bis auf Weiteres gesperrt.</span></li>
+
+  <!-- 9 · Nummer außerhalb 1…222: laut Schema ein Parse-Fehler und keine
+       Station. Wird als Sperrung geführt, damit der Text nicht verschwindet. -->
+  <li><span class="stk-block-icon-list-item__text">HWN 999 Hoher Zaun</span></li>
+
+  <!-- 10 · Wortgleiche Wiederholung von Fall 1: darf nur einmal erscheinen. -->
+  <li><span class="stk-block-icon-list-item__text">HWN 12 Blauer Stein</span></li>
+
+  <!-- 11 · Leerer Eintrag: wird übersprungen, ohne den Lauf zu stören. -->
+  <li><span class="stk-block-icon-list-item__text">   </span></li>
+
+</ul>
+</body>
+</html>
