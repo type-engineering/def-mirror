@@ -98,12 +98,22 @@ jobs:
 
       - name: Committen, falls verändert
         run: |
-          if git diff --quiet -- defects.json defects.signed.json defects-source.txt; then
+          # Erst überhaupt vorhanden? Ein Lauf, der nichts geschrieben hat,
+          # darf nicht als Erfolg enden.
+          for f in defects.json defects.signed.json defects-source.txt; do
+            if [ ! -s "$f" ]; then
+              echo "::error::$f fehlt oder ist leer — es wurde nichts ausgeliefert."
+              exit 1
+            fi
+          done
+          # Vergleich gegen HEAD über den Index: `git diff` allein sieht
+          # unverfolgte Dateien nicht und meldet für sie stets "unverändert".
+          git add -- defects.json defects.signed.json defects-source.txt
+          if git diff --cached --quiet -- defects.json defects.signed.json defects-source.txt; then
             echo "Unverändert — kein Commit."
             exit 0
           fi
           git config user.name  "mirror"
           git config user.email "type.engineering@posteo.de"
-          git add defects.json defects.signed.json defects-source.txt
           git commit -m "Stand $(date -u +%Y-%m-%d)"
           git push
