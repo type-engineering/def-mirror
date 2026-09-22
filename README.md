@@ -1,29 +1,23 @@
 # def-mirror
 
-Ein täglich gespiegelter, **signierter** Statusdatensatz: Meldungen über defekte
-Stationen, sicherheitsrelevante Hinweise und Wegsperrungen einer öffentlichen Quellseite, maschinell
-in ein stabiles JSON-Schema überführt und hier veröffentlicht.
+Ein täglich gespiegelter, **signierter** Statusdatensatz: 
+Meldungen über sicherheitsrelevante Hinweise und Wegsperrungen sowie von Defekten einer öffentlichen Quellseite, 
+maschinell in ein stabiles JSON-Schema überführt und hier geteilt.
 
 Zweck des Repositorys ist nicht die Auslieferung, sondern die
 **Nachvollziehbarkeit**: Jeder ausgelieferte Stand liegt als datierter Commit
 vor, zusammen mit der Signatur und einem Extrakt der Quellzeilen, aus denen er
-entstanden ist. Wer den Datensatz nutzt, muss dem Herausgeber nicht glauben — er
-kann nachrechnen.
+entstanden ist.
 
 ## Artefakte
 
 | Datei | Inhalt |
 |---|---|
-| `defects.json` | die Nutzdaten, lesbar, Schema 2 |
-| `defects.signed.json` | dieselben Bytes im signierten Umschlag — **das, was Clients abrufen** |
-| `defects-source.txt` | Quell-Extrakt: die geernteten Zeilen vor der Einordnung |
-| `KEYS` | die öffentlichen Schlüssel (Vertrauensanker) |
+| `defects.json` | Nutzdaten |
+| `defects.signed.json` | dieselben Bytes in einem signierten Umschlag |
+| `defects-source.txt` | Quell-Extrakt: extrahierte Zeilen vor der Einordnung |
+| `KEYS` | öffentliche Schlüssel (Vertrauensanker) |
 | `tools/` | Prüfwerkzeug und Schemata |
-
-Clients holen ausschließlich `defects.signed.json`. Ein Abruf, ein Dokument:
-Bei zwei getrennten Dateien (Daten + Signatur daneben) kann zwischen den beiden
-Anfragen veröffentlicht werden, und der Client hält neue Daten mit alter
-Signatur in der Hand.
 
 ## Prüfen
 
@@ -33,37 +27,28 @@ python3 -m venv .venv && .venv/bin/pip install -r tools/requirements.txt
     --expect-json defects.json --source defects-source.txt
 ```
 
-Geprüft wird in Stufen, jede für sich aussagekräftig:
+Geprüft wird in den folgenden Stufen:
 
-1. **Umschlag** wohlgeformt, Verfahren und Version wie erwartet.
+1. **Umschlag** Form, Verfahren und Version wie erwartet.
 2. **Signatur** gültig unter dem Schlüssel zur genannten `keyId`. Eine
-   unbekannte `keyId` ist ein Fehler, kein Grund zum Raten — genau so wirkt ein
-   Widerruf.
-3. **Schema**: die Nutzdaten entsprechen `tools/defects.schema.json`.
-4. **Frische**: `validUntil` noch nicht verstrichen. Nur ein Hinweis, kein
-   Fehlschlag — ein alter Stand ist nicht gefälscht, nur alt.
+   unbekannte `keyId` ist ein Fehler
+3. **Schema**: Nutzdaten entsprechen `tools/defects.schema.json`.
+4. **Frische**: `validUntil` noch nicht verstrichen?
 5. **Byte-Gleichheit**: die lesbare `defects.json` ist Byte für Byte das, was
    signiert wurde.
 6. **Herkunft**: `extractSha256` passt zum mitveröffentlichten Quell-Extrakt.
-7. **Deckung**: jeder Text im Feed steht so auch im Extrakt, und es wird
-   gemeldet, wie viele Extraktzeilen in keinem Eintrag auftauchen.
-
-Stufe 7 ist die interessante. Sie beantwortet „wurde hier etwas erfunden oder
-weggelassen?“ — ohne den Parser des Herausgebers zu kennen oder zu brauchen.
-Ein erfundener Eintrag lässt die Prüfung scheitern; eine weggelassene Meldung
-bleibt als unberücksichtigte Extraktzeile stehen.
+7. **Deckung**: jeder Text im Feed steht so auch im Extrakt. Meldung bei Abweichung.
 
 Exit 0 heißt: alle Stufen bestanden.
 
-Ohne Argumente prüft das Werkzeug nur, was es kann; `--expect-json` und
-`--source` sind optional, aber sie sind der interessante Teil. Ein Abruf direkt
-gegen die ausgelieferte URL geht auch:
+Ohne Argumente prüft das Werkzeug, was es kann; `--expect-json` und
+`--source` sind optional. Ein Abruf direkt gegen die ausgelieferte URL ist ebenfalls möglich:
 
 ```bash
 .venv/bin/python tools/verify.py --url <URL>/defects.signed.json --keys KEYS
 ```
 
-## Schema 2 — `defects.json`
+## Schema — `defects.json`
 
 Maschinenlesbar: `tools/defects.schema.json` (JSON Schema 2020-12). In Worten:
 
@@ -81,11 +66,7 @@ Maschinenlesbar: `tools/defects.schema.json` (JSON Schema 2020-12). In Worten:
 }
 ```
 
-Die Werte oben sind echt und nachrechenbar, nicht illustrativ: Die ids fallen
-aus `tools/harvest.py` genau so heraus, und wer den Extrakt hat, bekommt
-denselben `extractSha256`.
-
-### Kopf
+### Kopf (Head)
 
 | Feld | Typ | Bedeutung |
 |---|---|---|
@@ -111,8 +92,8 @@ Quellseite — deren Aufbau ordnet Listen nicht verlässlich ihren Überschrifte
 
 | Feld | Typ | Bedeutung |
 |---|---|---|
-| `id` | 12 Hex | Stabile, **inhaltsabgeleitete** Kennung: derselbe Eintrag hat morgen dieselbe `id`, unabhängig von seiner Position in der Liste. Normalisiert über NFKC und Weißraum, damit ein Reformat der Quelle einen bekannten Eintrag nicht als „neu" zurückbringt. |
-| `severity` | `info` \| `warning` \| `critical` | **Rein kategoriebasiert**, nicht aus dem Text geraten: `closures` → `critical`, `defects` → `warning`, `notices` → `info`. Die Klassifikation ist bereits eine Heuristik und bekommt keine zweite obendrauf. |
+| `id` | 12 Hex | Stabile, **inhaltsabgeleitete** Kennung: derselbe Eintrag hat morgen dieselbe `id`, unabhängig von seiner Position in der Liste. Normalisiert über NFKC und Weißraum, damit ein Reformat der Quelle einen bekannten Eintrag nicht als „neu" ausgibt. |
+| `severity` | `info` \| `warning` \| `critical` | **Rein kategoriebasiert**: `closures` → `critical`, `defects` → `warning`, `notices` → `info`. |
 | `station` | 1…222 | Nummer der Station, auf die sich der Eintrag bezieht. Join-Key auf der Client-Seite. |
 | `name` / `text` / `title` | String | Der Meldungstext. Clients sollten ihn als **reinen Text** darstellen — kein Markdown, keine automatische Link-Erkennung. |
 
@@ -141,22 +122,17 @@ ed25519_verify(pubkey[keyId], sig, jene Bytes)
 
 ## Schlüssel, Epochen, Widerruf
 
-Ed25519, ein aktiver Schlüssel und eine Reserve. Kein CA, kein
+Ed25519, ein aktiver Schlüssel und eine Reserve (keyEpoch). Kein CA, kein
 Widerrufsserver, keine Ablaufdaten. Die privaten Schlüssel entstehen von Hand
 und offline; sie liegen in keinem Repository und in keiner Cloud.
 
-`keyEpoch` ist der Widerruf. Ein zweiter Schlüssel im Client allein widerruft
-nichts — der Client vertraut dann eben beiden, und wer den ersten gestohlen hat,
-signiert weiter gültig. Deshalb trägt jeder Umschlag eine aufsteigende Epoche.
-
 > **Clients merken sich die höchste Epoche, die sie je gültig gesehen haben, und
-> weisen danach jede niedrigere ab — auch mit gültiger Signatur.**
+> weisen danach jede niedrigere ab — auch bei gültiger Signatur.**
 
-Sobald ein Gerät einmal einen Stand der Epoche 2 gesehen hat, ist der Schlüssel
-der Epoche 1 für dieses Gerät tot. Die Grenze, ehrlich benannt: Ein Gerät,
-dessen Netzverkehr ein Angreifer dauerhaft kontrolliert, bekommt den neueren
-Stand nie zu sehen und bleibt beim alten Schlüssel. Dagegen hilft nur ein
-Client-Update.
+Sobald ein Client einmal einen Stand der Epoche 2 gesehen hat, ist der Schlüssel
+der Epoche 1 für diesen Client tot. Sollte der ein Angreifer den Netzverkehr eines Clients
+*dauerhaft kontrollieren*, bekommt dieser den neueren Stand ggf. nie zu sehen und bliebe beim 
+alten Schlüssel. Dagegen hilft dann nur ein Client-Update.
 
 ## Was die Signatur leistet — und was nicht
 
@@ -166,44 +142,34 @@ Client-Update.
 | Ed25519 | „Hat die Pipeline des Herausgebers diese Bytes erzeugt?" | ob die Bytes inhaltlich stimmen |
 | Quell-Extrakt + Deckung | „Wurde etwas erfunden oder weggelassen?“ | ob die Quelle recht hat |
 
-Die Signatur beglaubigt auch eine Fehlklassifikation. Sie sagt, **wer** etwas
-behauptet hat — nicht, dass es stimmt. Deshalb liegt der Quell-Extrakt bei: er
-macht die Einordnung überhaupt erst überprüfbar.
+Die Signatur beglaubigt auch eine Fehlklassifikation. Deshalb liegt der Quell-Extrakt bei: 
+er macht die Einordnung überprüfbar.
 
-Bewusst **nicht** mitveröffentlicht wird die vollständige Quellseite. Deren
-Navigation, Fußzeile und Markup gehören nicht in eine Veröffentlichung, und die
-Meldungstexte stehen ohnehin schon im Feed. Wer die Seite selbst abruft, prüft
-sie gegen `sourceSha256`.
+Bewusst **nicht** mitveröffentlicht wird die vollständige Quellseite. 
+Wer die Seite selbst abruft, prüft sie gegen `sourceSha256`.
 
-Ebenfalls ehrlich: Die Pipeline, die die Daten erzeugt, signiert sie auch. Wer
-sie übernimmt, signiert mit. Die Signatur schützt gegen Manipulation beim
-Hoster und gegen ein entwendetes Zugangs-Token — nicht gegen eine
-kompromittierte Pipeline. Dagegen wirkt die öffentliche Historie: eine
+Die Pipeline, die die Daten erzeugt, signiert sie auch. Wer sie übernimmt, signiert mit. 
+Die Signatur schützt gegen Manipulation beim Hoster und gegen ein entwendetes Zugangs-Token — 
+nicht gegen eine kompromittierte Pipeline. Dagegen wirkt die öffentliche Historie: eine
 Fälschung müsste dauerhaft stehen bleiben und wäre für jeden sichtbar, der
 mitliest.
 
 ## Lizenz und Weiterverwendung
 
 **Code und Schemata unter MIT** (`LICENSE`). **Für die Daten gilt `DATA.md`** —
-und dort steht keine Datenlizenz, sondern der Grund dafür: Die Meldungen
-stammen von der in `source` genannten fremden Seite, die keine Nutzungsbedingung
-veröffentlicht. Lizenzieren kann nur, wem etwas gehört.
+Die Meldungen stammen von der in `source` genannten fremden Seite, die keine Nutzungsbedingung
+veröffentlicht.
 
-Wer die Daten nutzt: `source` und `generatedAt` mitführen, `validUntil`
-beachten, den Datensatz nicht als offizielle Veröffentlichung ausgeben — und
-diesen Spiegel verwenden, statt einen zweiten Abruf auf die Quelle zu bauen.
-Das Ausführliche steht in `DATA.md`.
+Dieser Mirror dient dazu, die Source Website vor einer hohen Anzahl an Anfragen zu schützen,
+und die abgeleiteten sicherheitsrelevanten Informationen in einem historisch nachvollziehbaren
+Format bereitzustellen.
 
-Sicherheitsbefunde: `SECURITY.md`.
+Zum Thema Sicherheitsbefunde bitte in `SECURITY.md` nachsehen.
 
 ## Rhythmus und Ausfallverhalten
 
 Ein Lauf pro Tag. Läuft der Abruf ins Leere oder liefert der Parser nichts,
 bricht die Pipeline ab und **lässt den letzten guten Stand stehen**, statt einen
-leeren zu veröffentlichen. Ein Datensatz ohne Meldungen sieht aus wie „alles in
-Ordnung" — das ist der gefährlichste mögliche Fehler dieses Feeds und deshalb an
-beiden Enden abgesichert: hier beim Erzeugen, und im Client, der eine Kategorie
-nicht von gefüllt auf leer fallen lässt.
+leeren zu veröffentlichen. 
 
-Fehlt der Signaturschlüssel, veröffentlicht die Pipeline **nichts**. Unsigniert
-ausliefern ist kein Rückfallpfad.
+Fehlt der Signaturschlüssel, veröffentlicht die Pipeline **nichts**.
