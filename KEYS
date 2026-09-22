@@ -14,9 +14,11 @@
 #
 # Prüfen:  python3 tools/verify.py --envelope defects.signed.json --keys KEYS
 #
-# Die privaten Teile entstanden von Hand und offline; sie liegen in keinem
-# Repository und in keiner Cloud. k2 ist die Reserve und kommt nicht in die
-# CI — eine Reserve neben dem aktiven Schlüssel wäre keine.
+# Die privaten Teile entstanden von Hand und offline. k1 liegt als
+# Repository-Secret SIGNING_KEY_PEM bei GitHub Actions, das täglich signiert;
+# die Schlüsselhoheit liegt damit bewusst mit bei GitHub (ADR 0006,
+# Entscheidung 4 in der Fassung vom 2026-09-22). k2 ist die Reserve und kommt
+# in keine CI — eine Reserve neben dem aktiven Schlüssel wäre keine.
 #
 # Fingerabdrücke (sha256 der 32 öffentlichen Bytes, erste 16 Hex):
 #   k1  17a08820ba306a79
