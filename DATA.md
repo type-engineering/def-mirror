@@ -16,7 +16,7 @@ Nutzungsbedingung für ihre Inhalte.
 | Gegenstand | Regelung |
 |---|---|
 | `tools/`, Schemata, Skripte | **MIT** (siehe `LICENSE`) |
-| Aufbereitung: Schema, Struktur, Kategorisierung, `id`-Bildung, Signatur | **CC0 1.0** — soweit daran überhaupt eigene Rechte bestehen, wird darauf verzichtet |
+| Aufbereitung: Schema, Struktur, Kategorisierung, `id`-Bildung, Signatur | **MIT** (siehe `LICENSE`) — soweit daran überhaupt eigene Rechte bestehen |
 | Inhalt der Meldungen | **keine Lizenz** — fremde Rechte, siehe oben |
 
 ## Wenn du die Daten nutzen willst
