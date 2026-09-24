@@ -1,17 +1,10 @@
 ACHTUNG! Ab 1. Januar 2025 versetzen wir unsere numerische Stempelstelle Nummer 149 vom aktuellen Standort „Kleine Oker“ zum neuen Standort „Mühlenberg Altenauer Herzweg“ N51.803286 E 10.450144
-HWN 5 Froschfelsen
-HWN 19 Skidenkmal
+HWN 85 Wasserkunst Thumkuhlental
 HWN 81 Sandsteinhöhlen – Kasten durch Filmdreharbeiten nicht erreichbar
 HWN 105 Prinzenlaube
-HWN 111 Steinbergalm
-HWN 138 Braunseck
-HWN 143 Köte Schindelkopf
-HWN 155 Rehberger Grabenhaus
+HWN 152 Knollenkreuz
 HWN 193 Stahlquelle
-HWN 206 Hahnestein
-HWN 208 Burgruine Grillenburg
 HWN 210 Schöne Aussicht Hainrode
-HWN 219 Wippertalsperre
 HWN 222 Bergbaulehrpfad Wettelrode
 Iberger Tropfsteinhöhle
 Märchenweg Wernigerode

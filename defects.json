@@ -1,22 +1,16 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-23T10:31:24+00:00",
-  "validUntil": "2026-09-30T10:31:24+00:00",
+  "generatedAt": "2026-09-24T10:48:58+00:00",
+  "validUntil": "2026-10-01T10:48:58+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "ce355301bd61c209a120bda4539351626d13e47e5932721cb70e6225355ca53f",
-  "extractSha256": "ecfcf1b362371d28303cc3d011028405eafbd0361ff4cca0a34c58cf985519a8",
+  "sourceSha256": "9d42e9079cfdf8afb799f086248bea8eb51410dc3accd852e55fce3baf185195",
+  "extractSha256": "d50800f578b7cd4cd417d51896521b8609b6aac7d7a20270213da1bd4a4ea066",
   "defects": [
     {
-      "id": "9c3230fbb5ed",
+      "id": "6d67d9e18cdd",
       "severity": "warning",
-      "station": 5,
-      "name": "Froschfelsen"
-    },
-    {
-      "id": "470000fba98f",
-      "severity": "warning",
-      "station": 19,
-      "name": "Skidenkmal"
+      "station": 85,
+      "name": "Wasserkunst Thumkuhlental"
     },
     {
       "id": "4e49aed560ff",
@@ -25,28 +19,10 @@
       "name": "Prinzenlaube"
     },
     {
-      "id": "bd6d972ba63c",
+      "id": "f09b1fa56df8",
       "severity": "warning",
-      "station": 111,
-      "name": "Steinbergalm"
-    },
-    {
-      "id": "1ae348cfee8a",
-      "severity": "warning",
-      "station": 138,
-      "name": "Braunseck"
-    },
-    {
-      "id": "3712530976f7",
-      "severity": "warning",
-      "station": 143,
-      "name": "Köte Schindelkopf"
-    },
-    {
-      "id": "53550a3d0aaa",
-      "severity": "warning",
-      "station": 155,
-      "name": "Rehberger Grabenhaus"
+      "station": 152,
+      "name": "Knollenkreuz"
     },
     {
       "id": "5d8016c8556c",
@@ -55,28 +31,10 @@
       "name": "Stahlquelle"
     },
     {
-      "id": "03fb54c2b3c1",
-      "severity": "warning",
-      "station": 206,
-      "name": "Hahnestein"
-    },
-    {
-      "id": "cd6047fea9ba",
-      "severity": "warning",
-      "station": 208,
-      "name": "Burgruine Grillenburg"
-    },
-    {
       "id": "611325540502",
       "severity": "warning",
       "station": 210,
       "name": "Schöne Aussicht Hainrode"
-    },
-    {
-      "id": "005e2a525609",
-      "severity": "warning",
-      "station": 219,
-      "name": "Wippertalsperre"
     },
     {
       "id": "0fcc14381b86",
