@@ -8,14 +8,28 @@
 name: mirror
 
 on:
+  # GitHub garantiert für `schedule` weder Zeitpunkt noch Ausführung, volle
+  # Stunden sind am stärksten verspätet. Deshalb mehrere Termine abseits von
+  # :00 — der erste erfolgreiche Lauf des Tages zählt, die übrigen enden an der
+  # Tagessperre. Der pünktliche Hauptauslöser ist extern: cron-job.org, 05:07
+  # UTC, POST /repos/type-engineering/def-mirror/actions/workflows/mirror.yml/
+  # dispatches mit {"ref":"main"} und einem fine-grained PAT (nur dieses Repo,
+  # Actions: read/write). Läuft der PAT ab, fällt nur dieser Auslöser weg —
+  # die Termine hier sind das Netz darunter.
   schedule:
-    # 06:00 UTC, täglich. GitHub führt Cron-Jobs unter Last verspätet aus;
-    # das ist hier folgenlos, weil generatedAt den tatsächlichen Laufzeitpunkt
-    # trägt und nicht diese Zeitangabe.
-    - cron: "0 6 * * *"
+    - cron: "23 5 * * *"
+    - cron: "53 6 * * *"
+    - cron: "23 9 * * *"
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Auch laufen, wenn heute schon ein Stand ausgeliefert wurde"
+        type: boolean
+        default: false
 
 # Zwei gleichzeitige Läufe würden sich beim Push gegenseitig überschreiben.
+# Ein wartender Lauf checkt erst beim Start aus und sieht dann den Stand seines
+# Vorgängers — die Tagessperre greift also auch bei gleichzeitigen Auslösern.
 concurrency:
   group: mirror
   cancel-in-progress: false
@@ -24,7 +38,44 @@ permissions:
   contents: write
 
 jobs:
+  # Jeder Lauf erzeugt ein neues generatedAt und damit einen Commit. Ohne
+  # Sperre gäbe es pro Auslöser einen "Stand"-Commit am selben Tag.
+  tagessperre:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      erledigt: ${{ steps.pruefen.outputs.erledigt }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          sparse-checkout: defects.json
+          sparse-checkout-cone-mode: false
+
+      - name: Heute schon ausgeliefert?
+        id: pruefen
+        env:
+          FORCE: ${{ inputs.force || false }}
+        run: |
+          python - <<'PY'
+          import json, os
+          from datetime import datetime, timezone
+          heute = datetime.now(timezone.utc).date()
+          try:
+              stand = datetime.fromisoformat(
+                  json.load(open("defects.json", encoding="utf-8"))["generatedAt"]
+              ).astimezone(timezone.utc).date()
+          except (OSError, ValueError, KeyError) as e:
+              print(f"::warning::Veröffentlichter Stand nicht lesbar ({e}) — Lauf wird durchgeführt.")
+              stand = None
+          erledigt = stand == heute and os.environ["FORCE"] != "true"
+          print(f"Veröffentlichter Stand: {stand}, heute: {heute}, erledigt: {erledigt}")
+          with open(os.environ["GITHUB_OUTPUT"], "a") as out:
+              out.write(f"erledigt={'true' if erledigt else 'false'}\n")
+          PY
+
   mirror:
+    needs: tagessperre
+    if: needs.tagessperre.outputs.erledigt != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
@@ -117,3 +168,37 @@ jobs:
           git config user.email "type.engineering@posteo.de"
           git commit -m "Stand $(date -u +%Y-%m-%d)"
           git push
+
+  # Totmannschalter: healthchecks.io erwartet täglich ein "ok". Bleibt es aus —
+  # weil kein Auslöser gegriffen hat oder der Lauf gescheitert ist —, alarmiert
+  # der Dienst von außen. Ein Lauf, der gar nicht startet, kann sich selbst
+  # nicht melden; genau dafür ist die Überwachung außerhalb von GitHub.
+  melden:
+    needs: [tagessperre, mirror]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Healthcheck
+        env:
+          PING_URL: ${{ secrets.HEALTHCHECK_PING_URL }}
+          SPERRE: ${{ needs.tagessperre.result }}
+          ERLEDIGT: ${{ needs.tagessperre.outputs.erledigt }}
+          MIRROR: ${{ needs.mirror.result }}
+        run: |
+          if [ -z "${PING_URL}" ]; then
+            echo "::warning::Secret HEALTHCHECK_PING_URL fehlt — ein ausbleibender Tagesstand fiele niemandem auf."
+            exit 0
+          fi
+          # "ok" heißt: der heutige Stand liegt vor — frisch erzeugt oder schon
+          # von einem früheren Lauf. Alles andere meldet /fail.
+          if [ "$SPERRE" = success ] && { [ "$MIRROR" = success ] || { [ "$MIRROR" = skipped ] && [ "$ERLEDIGT" = true ]; }; }; then
+            ziel="$PING_URL"; meldung=ok
+          else
+            ziel="$PING_URL/fail"; meldung=fail
+          fi
+          echo "tagessperre=$SPERRE mirror=$MIRROR → $meldung"
+          # Ein gescheiterter Ping lässt den Stand unberührt; healthchecks.io
+          # alarmiert dann ohnehin, weil das "ok" ausbleibt.
+          curl -fsS -m 10 --retry 5 -o /dev/null "$ziel" \
+            || echo "::warning::healthchecks.io nicht erreichbar."
