@@ -1,16 +1,22 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-27T10:36:54+00:00",
-  "validUntil": "2026-10-04T10:36:54+00:00",
+  "generatedAt": "2026-09-28T06:03:48+00:00",
+  "validUntil": "2026-10-05T06:03:48+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "f5f8e691a23c4bab0545177b017eefa6221e45fa523360d53e67aa974a4a9f02",
-  "extractSha256": "d50800f578b7cd4cd417d51896521b8609b6aac7d7a20270213da1bd4a4ea066",
+  "sourceSha256": "ff32fcc78a3f010dd7611a23790b7a10641a38c37962f2a8116fcb66191fe857",
+  "extractSha256": "9b96b79b183ba308bf57cfe8ff3ed4c85c665657d2a18b0efdaf7e939a222d61",
   "defects": [
     {
-      "id": "6d67d9e18cdd",
+      "id": "3957479c83cf",
       "severity": "warning",
-      "station": 85,
-      "name": "Wasserkunst Thumkuhlental"
+      "station": 63,
+      "name": "Schöneburg"
+    },
+    {
+      "id": "4b27932af9bb",
+      "severity": "warning",
+      "station": 64,
+      "name": "Böser Kleef"
     },
     {
       "id": "4e49aed560ff",
