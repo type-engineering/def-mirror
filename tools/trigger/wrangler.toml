@@ -1,0 +1,19 @@
+name = "def-mirror-trigger"
+main = "worker.js"
+compatibility_date = "2026-09-01"
+
+# Keine öffentliche URL: der Worker hat nur einen Cron-Handler.
+workers_dev = false
+
+# Cloudflare-Crons laufen in UTC. 05:15 liegt bewusst neben cron-job.org
+# (05:07), damit beide Auslöser nicht am selben Ausfall hängen.
+[triggers]
+crons = ["15 5 * * *"]
+
+[vars]
+REPO = "type-engineering/def-mirror"
+WORKFLOW = "mirror.yml"
+REF = "main"
+
+# GITHUB_TOKEN kommt als Secret, nie hier hinein:
+#   npx wrangler secret put GITHUB_TOKEN

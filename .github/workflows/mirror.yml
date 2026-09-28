@@ -8,14 +8,15 @@
 name: mirror
 
 on:
-  # GitHub garantiert für `schedule` weder Zeitpunkt noch Ausführung, volle
-  # Stunden sind am stärksten verspätet. Deshalb mehrere Termine abseits von
-  # :00 — der erste erfolgreiche Lauf des Tages zählt, die übrigen enden an der
-  # Tagessperre. Der pünktliche Hauptauslöser ist extern: cron-job.org, 05:07
-  # UTC, POST /repos/type-engineering/def-mirror/actions/workflows/mirror.yml/
-  # dispatches mit {"ref":"main"} und einem fine-grained PAT (nur dieses Repo,
-  # Actions: read/write). Läuft der PAT ab, fällt nur dieser Auslöser weg —
-  # die Termine hier sind das Netz darunter.
+  # GitHub garantiert für `schedule` weder Zeitpunkt noch Ausführung; hier
+  # starten die Termine regelmäßig 4–5 Stunden zu spät. Pünktlich ist nur
+  # `workflow_dispatch`, deshalb wird der Lauf von zwei unabhängigen Stellen
+  # außerhalb von GitHub angestoßen: cron-job.org (05:07 UTC) und ein
+  # Cloudflare Worker (05:15 UTC, tools/trigger/). Jeder mit eigenem
+  # fine-grained PAT (nur dieses Repo, Actions: read/write) — fällt einer weg,
+  # greift der andere. Die Termine hier sind nur das Netz darunter. Der erste
+  # erfolgreiche Lauf des Tages zählt, alle weiteren enden an der Tagessperre.
+  # Einrichtung und Fehlersuche: tools/trigger/README.md.
   schedule:
     - cron: "23 5 * * *"
     - cron: "53 6 * * *"
