@@ -1,22 +1,16 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-28T06:03:48+00:00",
-  "validUntil": "2026-10-05T06:03:48+00:00",
+  "generatedAt": "2026-09-29T11:25:51+00:00",
+  "validUntil": "2026-10-06T11:25:51+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "ff32fcc78a3f010dd7611a23790b7a10641a38c37962f2a8116fcb66191fe857",
-  "extractSha256": "9b96b79b183ba308bf57cfe8ff3ed4c85c665657d2a18b0efdaf7e939a222d61",
+  "sourceSha256": "61b1f49b73c14c9e16672b14ccec55341f2492e045d91e9f89830c8653bfd048",
+  "extractSha256": "7252dfb755955140246d3335cd2f164b923dd8c45cc7e9bf8a56da62c30929b3",
   "defects": [
     {
-      "id": "3957479c83cf",
+      "id": "470000fba98f",
       "severity": "warning",
-      "station": 63,
-      "name": "Schöneburg"
-    },
-    {
-      "id": "4b27932af9bb",
-      "severity": "warning",
-      "station": 64,
-      "name": "Böser Kleef"
+      "station": 19,
+      "name": "Skidenkmal"
     },
     {
       "id": "4e49aed560ff",
@@ -25,16 +19,22 @@
       "name": "Prinzenlaube"
     },
     {
+      "id": "d048c3ee3103",
+      "severity": "warning",
+      "station": 113,
+      "name": "Grumbacher Teich"
+    },
+    {
       "id": "f09b1fa56df8",
       "severity": "warning",
       "station": 152,
       "name": "Knollenkreuz"
     },
     {
-      "id": "5d8016c8556c",
+      "id": "a07b5b3bdc1c",
       "severity": "warning",
-      "station": 193,
-      "name": "Stahlquelle"
+      "station": 192,
+      "name": "Historischer Gipsbrennofen"
     },
     {
       "id": "611325540502",
@@ -101,19 +101,39 @@
   ],
   "closures": [
     {
-      "id": "cca55c45cae3",
-      "severity": "critical",
-      "title": "Iberger Tropfsteinhöhle"
-    },
-    {
       "id": "5e5eb0c7bfe9",
       "severity": "critical",
       "title": "Märchenweg Wernigerode"
     },
     {
-      "id": "9a86e8f347f1",
+      "id": "68772dd69f2d",
       "severity": "critical",
-      "title": "Harlyturm"
+      "title": "Großer Siebersteinsteich"
+    },
+    {
+      "id": "ceb73a1be6e9",
+      "severity": "critical",
+      "title": "Heiliger Teich"
+    },
+    {
+      "id": "0c87bc06e91a",
+      "severity": "critical",
+      "title": "Neuer Teich Gernrode"
+    },
+    {
+      "id": "7014ad7d4d83",
+      "severity": "critical",
+      "title": "Oder Minigolf"
+    },
+    {
+      "id": "3dc6f598a788",
+      "severity": "critical",
+      "title": "Hüttengrund"
+    },
+    {
+      "id": "b2fa6670f493",
+      "severity": "critical",
+      "title": "Kalte Stelle"
     },
     {
       "id": "85022c6eaf46",

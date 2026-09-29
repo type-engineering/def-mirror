@@ -1,15 +1,19 @@
 ACHTUNG! Ab 1. Januar 2025 versetzen wir unsere numerische Stempelstelle Nummer 149 vom aktuellen Standort „Kleine Oker“ zum neuen Standort „Mühlenberg Altenauer Herzweg“ N51.803286 E 10.450144
-HWN 63 Schöneburg
-HWN 64 Böser Kleef
+HWN 19 Skidenkmal
 HWN 81 Sandsteinhöhlen – Kasten durch Filmdreharbeiten nicht erreichbar
 HWN 105 Prinzenlaube
+HWN 113 Grumbacher Teich
 HWN 152 Knollenkreuz
-HWN 193 Stahlquelle
+HWN 192 Historischer Gipsbrennofen
 HWN 210 Schöne Aussicht Hainrode
 HWN 222 Bergbaulehrpfad Wettelrode
-Iberger Tropfsteinhöhle
 Märchenweg Wernigerode
-Harlyturm
+Großer Siebersteinsteich
+Heiliger Teich
+Neuer Teich Gernrode
+Oder Minigolf
+Hüttengrund
+Kalte Stelle
 Aholzwarte (entfällt vorläufig!)
 Bückeberg entfällt!
 Aufgrund der Bauarbeiten am Schloss Wernigerode wurde der Stempelkasten vor das untere Schlosstor versetzt.
