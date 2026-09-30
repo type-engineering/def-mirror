@@ -1,0 +1,90 @@
+# Prüflauf für die Qualitätsprüfung im Kurations-Dashboard (lokal, manuell).
+#
+# Erntet die Quellseite genau wie `mirror.yml`, veröffentlicht aber NICHTS:
+# kein Commit, kein Push, kein Signieren, keine Tagessperre, kein Healthcheck.
+# Der öffentliche Tagesstand (defects*.json) bleibt unberührt — dieser Workflow
+# hat dafür weder Schreibrechte noch Secrets.
+#
+# Ergebnis ist ein Workflow-Artefakt (1 Tag) mit defects.json und
+# defects-source.txt. Beide enthalten nur Zeilen, die ohnehin im öffentlichen
+# Feed stehen; die HTML der Quellseite verlässt den Runner nicht. Das Dashboard
+# holt das Artefakt, ruft die Live-Seite im selben Moment selbst ab und
+# vergleicht beides.
+#
+# Ausgelöst nur per `workflow_dispatch` (fine-grained PAT, nur dieses Repo,
+# Actions: read/write — Einstellungen im Dashboard). `nonce` macht den Lauf
+# wiederfindbar: der Dispatch liefert keine Run-ID zurück, der Name trägt sie.
+
+name: validate
+
+run-name: validate ${{ inputs.nonce }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      nonce:
+        description: "Kennung, mit der das Dashboard den Lauf wiederfindet"
+        type: string
+        required: true
+
+# Eigene Gruppe: ein Prüflauf darf den Tageslauf (`mirror`) weder warten lassen
+# noch von ihm gebremst werden.
+concurrency:
+  group: validate
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  ernten:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: tools/requirements.txt
+
+      - name: Abhängigkeiten
+        run: python -m pip install --disable-pip-version-check -r tools/requirements.txt
+
+      # Wie im Tageslauf: ein beschädigter Parser soll gar nicht erst ernten.
+      - name: Regressionstest
+        run: python tools/test_harvest.py
+
+      # Ausgabe außerhalb des Arbeitsverzeichnisses der Repo-Dateien: selbst ein
+      # versehentliches `git add` könnte den veröffentlichten Stand nicht treffen.
+      # `--min-ratio 0`: keine Schrumpf-Bremse — die Prüfung soll sehen, was der
+      # Parser wirklich liefert, statt dass die Bremse einen Fehler verdeckt.
+      - name: Ernten
+        run: |
+          mkdir -p "$RUNNER_TEMP/validate"
+          python tools/harvest.py --out "$RUNNER_TEMP/validate/defects.json" \
+                                  --source-out "$RUNNER_TEMP/validate/defects-source.txt" \
+                                  --min-ratio 0
+
+      - name: Nicht leer?
+        run: |
+          python - <<'PY'
+          import json, os, sys
+          feed = json.load(open(os.environ["RUNNER_TEMP"] + "/validate/defects.json", encoding="utf-8"))
+          anzahl = sum(len(feed.get(k, [])) for k in ("defects", "notices", "closures"))
+          if anzahl == 0:
+              print("::error::Der Lauf ergab null Einträge — Parser- oder Abruffehler.")
+              sys.exit(1)
+          print(f"{anzahl} Einträge geerntet.")
+          PY
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: validation-${{ inputs.nonce }}
+          path: |
+            ${{ runner.temp }}/validate/defects.json
+            ${{ runner.temp }}/validate/defects-source.txt
+          retention-days: 1
+          if-no-files-found: error
