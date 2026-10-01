@@ -1,11 +1,12 @@
 ACHTUNG! Ab 1. Januar 2025 versetzen wir unsere numerische Stempelstelle Nummer 149 vom aktuellen Standort „Kleine Oker“ zum neuen Standort „Mühlenberg Altenauer Herzweg“ N51.803286 E 10.450144
+HWN 17 Trudenstein
 HWN 19 Skidenkmal
 HWN 81 Sandsteinhöhlen – Kasten durch Filmdreharbeiten nicht erreichbar
-HWN 105 Prinzenlaube
 HWN 113 Grumbacher Teich
 HWN 152 Knollenkreuz
 HWN 192 Historischer Gipsbrennofen
 HWN 210 Schöne Aussicht Hainrode
+HWN 220 Schutzhütte Phillipsgruß
 HWN 222 Bergbaulehrpfad Wettelrode
 Märchenweg Wernigerode
 Großer Siebersteinsteich

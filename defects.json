@@ -1,22 +1,22 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-30T05:07:38+00:00",
-  "validUntil": "2026-10-07T05:07:38+00:00",
+  "generatedAt": "2026-10-01T05:07:36+00:00",
+  "validUntil": "2026-10-08T05:07:36+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "c32b87f862c029c58084bacdb29ebf39b127d635fea7a36e9797395c19be5c30",
-  "extractSha256": "7252dfb755955140246d3335cd2f164b923dd8c45cc7e9bf8a56da62c30929b3",
+  "sourceSha256": "8453f9c9e93150ecc204af1db88eeb500f65dd4e1a75774afdfe2fdddb529439",
+  "extractSha256": "7f3d929cfb2503d95328bd8be45116e4fd11a2121cd30a4cce189ee4a5068bb5",
   "defects": [
+    {
+      "id": "d2684755ce13",
+      "severity": "warning",
+      "station": 17,
+      "name": "Trudenstein"
+    },
     {
       "id": "470000fba98f",
       "severity": "warning",
       "station": 19,
       "name": "Skidenkmal"
-    },
-    {
-      "id": "4e49aed560ff",
-      "severity": "warning",
-      "station": 105,
-      "name": "Prinzenlaube"
     },
     {
       "id": "d048c3ee3103",
@@ -41,6 +41,12 @@
       "severity": "warning",
       "station": 210,
       "name": "Schöne Aussicht Hainrode"
+    },
+    {
+      "id": "2905885a61fb",
+      "severity": "warning",
+      "station": 220,
+      "name": "Schutzhütte Phillipsgruß"
     },
     {
       "id": "0fcc14381b86",
