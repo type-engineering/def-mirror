@@ -1,10 +1,10 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-01T05:07:36+00:00",
-  "validUntil": "2026-10-08T05:07:36+00:00",
+  "generatedAt": "2026-10-02T05:07:34+00:00",
+  "validUntil": "2026-10-09T05:07:34+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "8453f9c9e93150ecc204af1db88eeb500f65dd4e1a75774afdfe2fdddb529439",
-  "extractSha256": "7f3d929cfb2503d95328bd8be45116e4fd11a2121cd30a4cce189ee4a5068bb5",
+  "sourceSha256": "4c39b657975fb5dbf943acac4849e0d97a796444e44bf08a36db8e29e0a9f925",
+  "extractSha256": "f98e3a84435268e7c71f4d936167846184b60f7b99ab0ca58ad5145eaeebee73",
   "defects": [
     {
       "id": "d2684755ce13",
@@ -19,10 +19,22 @@
       "name": "Skidenkmal"
     },
     {
-      "id": "d048c3ee3103",
+      "id": "75a9006dbdb0",
       "severity": "warning",
-      "station": 113,
-      "name": "Grumbacher Teich"
+      "station": 31,
+      "name": "Agnesberg"
+    },
+    {
+      "id": "a303ea90466a",
+      "severity": "warning",
+      "station": 99,
+      "name": "Harzer Holzdampflok"
+    },
+    {
+      "id": "1ae348cfee8a",
+      "severity": "warning",
+      "station": 138,
+      "name": "Braunseck"
     },
     {
       "id": "f09b1fa56df8",
@@ -31,28 +43,16 @@
       "name": "Knollenkreuz"
     },
     {
-      "id": "a07b5b3bdc1c",
+      "id": "97965060328a",
       "severity": "warning",
-      "station": 192,
-      "name": "Historischer Gipsbrennofen"
-    },
-    {
-      "id": "611325540502",
-      "severity": "warning",
-      "station": 210,
-      "name": "Schöne Aussicht Hainrode"
+      "station": 188,
+      "name": "Teufelsmauer Weddersleben"
     },
     {
       "id": "2905885a61fb",
       "severity": "warning",
       "station": 220,
       "name": "Schutzhütte Phillipsgruß"
-    },
-    {
-      "id": "0fcc14381b86",
-      "severity": "warning",
-      "station": 222,
-      "name": "Bergbaulehrpfad Wettelrode"
     }
   ],
   "notices": [
@@ -61,12 +61,6 @@
       "severity": "info",
       "station": 149,
       "text": "ACHTUNG! Ab 1. Januar 2025 versetzen wir unsere numerische Stempelstelle Nummer 149 vom aktuellen Standort „Kleine Oker“ zum neuen Standort „Mühlenberg Altenauer Herzweg“ N51.803286 E 10.450144"
-    },
-    {
-      "id": "0908544aab18",
-      "severity": "info",
-      "station": 81,
-      "text": "HWN 81 Sandsteinhöhlen – Kasten durch Filmdreharbeiten nicht erreichbar"
     },
     {
       "id": "6c77f1668ef1",
