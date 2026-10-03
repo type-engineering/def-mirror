@@ -1,10 +1,10 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-02T05:07:34+00:00",
-  "validUntil": "2026-10-09T05:07:34+00:00",
+  "generatedAt": "2026-10-03T05:07:37+00:00",
+  "validUntil": "2026-10-10T05:07:37+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "4c39b657975fb5dbf943acac4849e0d97a796444e44bf08a36db8e29e0a9f925",
-  "extractSha256": "f98e3a84435268e7c71f4d936167846184b60f7b99ab0ca58ad5145eaeebee73",
+  "sourceSha256": "5c1ecbeaf24a3221f1ae807c3e71cb559d75a35aeec8106c3c04e5b4ee1c4e40",
+  "extractSha256": "ba87fb8c0af2f7227fa2b4f3ccec14acbc44e6751bf2bf25bd990b92ba3ec956",
   "defects": [
     {
       "id": "d2684755ce13",
@@ -35,18 +35,6 @@
       "severity": "warning",
       "station": 138,
       "name": "Braunseck"
-    },
-    {
-      "id": "f09b1fa56df8",
-      "severity": "warning",
-      "station": 152,
-      "name": "Knollenkreuz"
-    },
-    {
-      "id": "97965060328a",
-      "severity": "warning",
-      "station": 188,
-      "name": "Teufelsmauer Weddersleben"
     },
     {
       "id": "2905885a61fb",
@@ -106,21 +94,6 @@
       "title": "Märchenweg Wernigerode"
     },
     {
-      "id": "68772dd69f2d",
-      "severity": "critical",
-      "title": "Großer Siebersteinsteich"
-    },
-    {
-      "id": "ceb73a1be6e9",
-      "severity": "critical",
-      "title": "Heiliger Teich"
-    },
-    {
-      "id": "0c87bc06e91a",
-      "severity": "critical",
-      "title": "Neuer Teich Gernrode"
-    },
-    {
       "id": "7014ad7d4d83",
       "severity": "critical",
       "title": "Oder Minigolf"
@@ -134,6 +107,11 @@
       "id": "b2fa6670f493",
       "severity": "critical",
       "title": "Kalte Stelle"
+    },
+    {
+      "id": "3756f9886340",
+      "severity": "critical",
+      "title": "NES Brandberg"
     },
     {
       "id": "85022c6eaf46",

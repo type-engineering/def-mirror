@@ -4,16 +4,12 @@ HWN 19 Skidenkmal
 HWN 31 Agnesberg
 HWN 99 Harzer Holzdampflok
 HWN 138 Braunseck
-HWN 152 Knollenkreuz
-HWN 188 Teufelsmauer Weddersleben
 HWN 220 Schutzhütte Phillipsgruß
 Märchenweg Wernigerode
-Großer Siebersteinsteich
-Heiliger Teich
-Neuer Teich Gernrode
 Oder Minigolf
 Hüttengrund
 Kalte Stelle
+NES Brandberg
 Aholzwarte (entfällt vorläufig!)
 Bückeberg entfällt!
 Aufgrund der Bauarbeiten am Schloss Wernigerode wurde der Stempelkasten vor das untere Schlosstor versetzt.
