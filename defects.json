@@ -1,10 +1,10 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-03T05:07:37+00:00",
-  "validUntil": "2026-10-10T05:07:37+00:00",
+  "generatedAt": "2026-10-04T05:07:38+00:00",
+  "validUntil": "2026-10-11T05:07:38+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "5c1ecbeaf24a3221f1ae807c3e71cb559d75a35aeec8106c3c04e5b4ee1c4e40",
-  "extractSha256": "ba87fb8c0af2f7227fa2b4f3ccec14acbc44e6751bf2bf25bd990b92ba3ec956",
+  "sourceSha256": "0bbc7af98ceb98271400fcb2b15718ca387d6dae8c1f047441219cad77e95de0",
+  "extractSha256": "35b056b3638a71fd636a81418a2a83964aa8cea3c1df952583ee68cf8d35a900",
   "defects": [
     {
       "id": "d2684755ce13",
@@ -19,16 +19,16 @@
       "name": "Skidenkmal"
     },
     {
-      "id": "75a9006dbdb0",
-      "severity": "warning",
-      "station": 31,
-      "name": "Agnesberg"
-    },
-    {
       "id": "a303ea90466a",
       "severity": "warning",
       "station": 99,
       "name": "Harzer Holzdampflok"
+    },
+    {
+      "id": "d048c3ee3103",
+      "severity": "warning",
+      "station": 113,
+      "name": "Grumbacher Teich"
     },
     {
       "id": "1ae348cfee8a",
@@ -88,6 +88,11 @@
     }
   ],
   "closures": [
+    {
+      "id": "f89b69105daf",
+      "severity": "critical",
+      "title": "HWM 193 Stahlquelle"
+    },
     {
       "id": "5e5eb0c7bfe9",
       "severity": "critical",
