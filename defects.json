@@ -1,16 +1,16 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T05:07:38+00:00",
-  "validUntil": "2026-10-11T05:07:38+00:00",
+  "generatedAt": "2026-10-05T05:07:36+00:00",
+  "validUntil": "2026-10-12T05:07:36+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "0bbc7af98ceb98271400fcb2b15718ca387d6dae8c1f047441219cad77e95de0",
-  "extractSha256": "35b056b3638a71fd636a81418a2a83964aa8cea3c1df952583ee68cf8d35a900",
+  "sourceSha256": "0cc8142e3ac451d8a66c40db4282efbc8c7787ef71fafb3bfdf3f687bbef6b5d",
+  "extractSha256": "8f92a86424813680cb8d159fcfb6896ebf75c91b3016a17d0b094ac9e380f8c9",
   "defects": [
     {
-      "id": "d2684755ce13",
+      "id": "d6c0160fdd83",
       "severity": "warning",
-      "station": 17,
-      "name": "Trudenstein"
+      "station": 9,
+      "name": "Brockenhaus"
     },
     {
       "id": "470000fba98f",
@@ -19,10 +19,16 @@
       "name": "Skidenkmal"
     },
     {
-      "id": "a303ea90466a",
+      "id": "75a9006dbdb0",
       "severity": "warning",
-      "station": 99,
-      "name": "Harzer Holzdampflok"
+      "station": 31,
+      "name": "Agnesberg"
+    },
+    {
+      "id": "e6d213c9f108",
+      "severity": "warning",
+      "station": 70,
+      "name": "Prinzensicht"
     },
     {
       "id": "d048c3ee3103",
@@ -31,16 +37,22 @@
       "name": "Grumbacher Teich"
     },
     {
+      "id": "151c30f59a6f",
+      "severity": "warning",
+      "station": 114,
+      "name": "Ramseck"
+    },
+    {
       "id": "1ae348cfee8a",
       "severity": "warning",
       "station": 138,
       "name": "Braunseck"
     },
     {
-      "id": "2905885a61fb",
+      "id": "81755d8a7f8c",
       "severity": "warning",
-      "station": 220,
-      "name": "Schutzhütte Phillipsgruß"
+      "station": 186,
+      "name": "Anhaltinischer Saalstein"
     }
   ],
   "notices": [
@@ -94,19 +106,19 @@
       "title": "HWM 193 Stahlquelle"
     },
     {
-      "id": "5e5eb0c7bfe9",
-      "severity": "critical",
-      "title": "Märchenweg Wernigerode"
-    },
-    {
       "id": "7014ad7d4d83",
       "severity": "critical",
       "title": "Oder Minigolf"
     },
     {
-      "id": "3dc6f598a788",
+      "id": "baffa8e861ef",
       "severity": "critical",
-      "title": "Hüttengrund"
+      "title": "Bärenstein"
+    },
+    {
+      "id": "c8635540615b",
+      "severity": "critical",
+      "title": "Rückhaltebecken Wippra"
     },
     {
       "id": "b2fa6670f493",

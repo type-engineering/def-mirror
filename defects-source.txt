@@ -1,14 +1,16 @@
 ACHTUNG! Ab 1. Januar 2025 versetzen wir unsere numerische Stempelstelle Nummer 149 vom aktuellen Standort „Kleine Oker“ zum neuen Standort „Mühlenberg Altenauer Herzweg“ N51.803286 E 10.450144
-HWN 17 Trudenstein
+HWN 9 Brockenhaus
 HWN 19 Skidenkmal
-HWN 99 Harzer Holzdampflok
+HWN 31 Agnesberg
+HWN 70 Prinzensicht
 HWN 113 Grumbacher Teich
+HWN 114 Ramseck
 HWN 138 Braunseck
 HWM 193 Stahlquelle
-HWN 220 Schutzhütte Phillipsgruß
-Märchenweg Wernigerode
+HWN 186 Anhaltinischer Saalstein
 Oder Minigolf
-Hüttengrund
+Bärenstein
+Rückhaltebecken Wippra
 Kalte Stelle
 NES Brandberg
 Aholzwarte (entfällt vorläufig!)
