@@ -1,17 +1,11 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-07T05:07:36+00:00",
-  "validUntil": "2026-10-14T05:07:36+00:00",
+  "generatedAt": "2026-10-08T05:07:38+00:00",
+  "validUntil": "2026-10-15T05:07:38+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "843dcbe2c116d2eb4b6ffc3ab0c4d28bac23a408667b203319b24663801f7a64",
-  "extractSha256": "8f92a86424813680cb8d159fcfb6896ebf75c91b3016a17d0b094ac9e380f8c9",
+  "sourceSha256": "2c93d6f18b59af49cee64f068a031da526ce5bdb71863b8c78d45596eea402a0",
+  "extractSha256": "790d92a88b92e10226a9f0750ac86b8846b49936e41baef1b4e744255064091e",
   "defects": [
-    {
-      "id": "d6c0160fdd83",
-      "severity": "warning",
-      "station": 9,
-      "name": "Brockenhaus"
-    },
     {
       "id": "470000fba98f",
       "severity": "warning",
@@ -25,10 +19,10 @@
       "name": "Agnesberg"
     },
     {
-      "id": "e6d213c9f108",
+      "id": "a5fa6b6443a9",
       "severity": "warning",
-      "station": 70,
-      "name": "Prinzensicht"
+      "station": 32,
+      "name": "Gasth. Christianental"
     },
     {
       "id": "d048c3ee3103",
@@ -43,10 +37,16 @@
       "name": "Ramseck"
     },
     {
-      "id": "1ae348cfee8a",
+      "id": "8a8432c07694",
       "severity": "warning",
-      "station": 138,
-      "name": "Braunseck"
+      "station": 144,
+      "name": "Hanskühnenburg"
+    },
+    {
+      "id": "793d1f974f5c",
+      "severity": "warning",
+      "station": 158,
+      "name": "Hassenstein"
     },
     {
       "id": "81755d8a7f8c",
@@ -101,14 +101,14 @@
   ],
   "closures": [
     {
-      "id": "f89b69105daf",
-      "severity": "critical",
-      "title": "HWM 193 Stahlquelle"
-    },
-    {
       "id": "7014ad7d4d83",
       "severity": "critical",
       "title": "Oder Minigolf"
+    },
+    {
+      "id": "fd676097bf76",
+      "severity": "critical",
+      "title": "Erichsburg"
     },
     {
       "id": "baffa8e861ef",
