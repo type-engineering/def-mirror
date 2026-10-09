@@ -1,22 +1,16 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T05:07:38+00:00",
-  "validUntil": "2026-10-15T05:07:38+00:00",
+  "generatedAt": "2026-10-09T05:07:33+00:00",
+  "validUntil": "2026-10-16T05:07:33+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "2c93d6f18b59af49cee64f068a031da526ce5bdb71863b8c78d45596eea402a0",
-  "extractSha256": "790d92a88b92e10226a9f0750ac86b8846b49936e41baef1b4e744255064091e",
+  "sourceSha256": "ffa3a25d85b44c318cdc24c5396f96e1acb361a3419828dc1768c89d6c2edb38",
+  "extractSha256": "b19ed926345869f153e2f11e60cc0f4d4087fde468d3d19009b0130739bfc66b",
   "defects": [
     {
-      "id": "470000fba98f",
+      "id": "712c15555d6e",
       "severity": "warning",
-      "station": 19,
-      "name": "Skidenkmal"
-    },
-    {
-      "id": "75a9006dbdb0",
-      "severity": "warning",
-      "station": 31,
-      "name": "Agnesberg"
+      "station": 26,
+      "name": "Mönchsbuche"
     },
     {
       "id": "a5fa6b6443a9",
@@ -43,10 +37,10 @@
       "name": "Hanskühnenburg"
     },
     {
-      "id": "793d1f974f5c",
+      "id": "9f8e8f64a6d7",
       "severity": "warning",
-      "station": 158,
-      "name": "Hassenstein"
+      "station": 150,
+      "name": "Großer Knollen"
     },
     {
       "id": "81755d8a7f8c",
