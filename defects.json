@@ -1,10 +1,10 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-09T05:07:33+00:00",
-  "validUntil": "2026-10-16T05:07:33+00:00",
+  "generatedAt": "2026-10-10T05:07:34+00:00",
+  "validUntil": "2026-10-17T05:07:34+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "ffa3a25d85b44c318cdc24c5396f96e1acb361a3419828dc1768c89d6c2edb38",
-  "extractSha256": "b19ed926345869f153e2f11e60cc0f4d4087fde468d3d19009b0130739bfc66b",
+  "sourceSha256": "f8378f2fd16eb0483cd47ff4fce6c4ef08f7468886bca18569b2ea263105336c",
+  "extractSha256": "c35cd543b977025585fafaf53c061d2b2b97c27694221e65bfd6d5876a5ea78e",
   "defects": [
     {
       "id": "712c15555d6e",
@@ -17,12 +17,6 @@
       "severity": "warning",
       "station": 32,
       "name": "Gasth. Christianental"
-    },
-    {
-      "id": "d048c3ee3103",
-      "severity": "warning",
-      "station": 113,
-      "name": "Grumbacher Teich"
     },
     {
       "id": "151c30f59a6f",
@@ -110,19 +104,9 @@
       "title": "Bärenstein"
     },
     {
-      "id": "c8635540615b",
-      "severity": "critical",
-      "title": "Rückhaltebecken Wippra"
-    },
-    {
       "id": "b2fa6670f493",
       "severity": "critical",
       "title": "Kalte Stelle"
-    },
-    {
-      "id": "3756f9886340",
-      "severity": "critical",
-      "title": "NES Brandberg"
     },
     {
       "id": "85022c6eaf46",
@@ -150,9 +134,9 @@
       "title": "Die Aholzwarte in Quedlinburg entfällt zukünftig für das Themenheft „Rund um Bad Suderode, Gernrode und die Welterbestadt Quedlinburg“"
     },
     {
-      "id": "e74719ccd585",
+      "id": "5307e4c55aa2",
       "severity": "critical",
-      "title": "Der Jubiläumstempel „Butterekuppe“ wurde versetzt und befindet sich in einer Schutzhütte auf dem Kaiser-Otto-Höhenweg in Richtung Wallhausen"
+      "title": "Der Jubiläumstempel „Butterkuppe“ wurde versetzt und befindet sich in einer Schutzhütte auf dem Kaiser-Otto-Höhenweg in Richtung Wallhausen"
     }
   ]
 }
