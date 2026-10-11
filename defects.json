@@ -1,10 +1,10 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-10T05:07:34+00:00",
-  "validUntil": "2026-10-17T05:07:34+00:00",
+  "generatedAt": "2026-10-11T05:07:31+00:00",
+  "validUntil": "2026-10-18T05:07:31+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "f8378f2fd16eb0483cd47ff4fce6c4ef08f7468886bca18569b2ea263105336c",
-  "extractSha256": "c35cd543b977025585fafaf53c061d2b2b97c27694221e65bfd6d5876a5ea78e",
+  "sourceSha256": "02ef259f18841190deb671542869f94c6acdabfc993813e236ca8b445aecdb93",
+  "extractSha256": "a22893e996e64b06691d98123e9bcce0a1a43d8bb723127fe6477bbdca94b5da",
   "defects": [
     {
       "id": "712c15555d6e",
@@ -17,12 +17,6 @@
       "severity": "warning",
       "station": 32,
       "name": "Gasth. Christianental"
-    },
-    {
-      "id": "151c30f59a6f",
-      "severity": "warning",
-      "station": 114,
-      "name": "Ramseck"
     },
     {
       "id": "8a8432c07694",
