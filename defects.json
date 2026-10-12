@@ -1,10 +1,10 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-11T05:07:31+00:00",
-  "validUntil": "2026-10-18T05:07:31+00:00",
+  "generatedAt": "2026-10-12T05:07:33+00:00",
+  "validUntil": "2026-10-19T05:07:33+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "02ef259f18841190deb671542869f94c6acdabfc993813e236ca8b445aecdb93",
-  "extractSha256": "a22893e996e64b06691d98123e9bcce0a1a43d8bb723127fe6477bbdca94b5da",
+  "sourceSha256": "75955456b8fef9df3e7a742c51fb6ca455e2948c00faedefc2662df7241f2806",
+  "extractSha256": "f5643ea0bbd9a1ce438ce2e1903d41083526bf89e6c577e3f7ac71530bb42449",
   "defects": [
     {
       "id": "712c15555d6e",
@@ -103,14 +103,19 @@
       "title": "Kalte Stelle"
     },
     {
-      "id": "85022c6eaf46",
+      "id": "28a940d7bf6d",
       "severity": "critical",
-      "title": "Aholzwarte (entfällt vorläufig!)"
+      "title": "Rund um Quedlinburg – Aholzwarte (entfällt vorläufig!)"
     },
     {
-      "id": "44aa54ec5741",
+      "id": "12126ada2d96",
       "severity": "critical",
-      "title": "Bückeberg entfällt!"
+      "title": "Jubiläumsheft – Bückeberg entfällt!"
+    },
+    {
+      "id": "0182ea8405c1",
+      "severity": "critical",
+      "title": "Karstwanderweg – Papenberg entfällt!"
     },
     {
       "id": "5ee7a6edfe63",
