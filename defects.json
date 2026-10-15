@@ -1,11 +1,17 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-14T05:07:37+00:00",
-  "validUntil": "2026-10-21T05:07:37+00:00",
+  "generatedAt": "2026-10-15T05:07:37+00:00",
+  "validUntil": "2026-10-22T05:07:37+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "84609296dfb9f4f20ab8c23f00059147234cfa0b80ee1afef962f920cc1ed964",
-  "extractSha256": "8fee12c971d0fa7915a3ca7943cb0b9a2160387788389e7ef22110fc094f0ebd",
+  "sourceSha256": "2108cc28f219ade285fb4be015169a3240fc5ec3d6d2af6752649582871f396b",
+  "extractSha256": "9b6d659a7577f04580a0d6381e662ad728384c2ca865206a16597481c8770eec",
   "defects": [
+    {
+      "id": "b5da43335147",
+      "severity": "warning",
+      "station": 22,
+      "name": "Gelber Brink"
+    },
     {
       "id": "4b8a5da0dfe0",
       "severity": "warning",
@@ -25,22 +31,34 @@
       "name": "Gasth. Christianental"
     },
     {
+      "id": "a5b5d4c38eac",
+      "severity": "warning",
+      "station": 45,
+      "name": "Dicke Tannen"
+    },
+    {
       "id": "a801ac730ca6",
       "severity": "warning",
       "station": 94,
       "name": "Dreiherrenstein (am Brandhai 48A)"
     },
     {
+      "id": "151c30f59a6f",
+      "severity": "warning",
+      "station": 114,
+      "name": "Ramseck"
+    },
+    {
+      "id": "d15b49af2080",
+      "severity": "warning",
+      "station": 140,
+      "name": "Eselsplatz"
+    },
+    {
       "id": "9f8e8f64a6d7",
       "severity": "warning",
       "station": 150,
       "name": "Großer Knollen"
-    },
-    {
-      "id": "81755d8a7f8c",
-      "severity": "warning",
-      "station": 186,
-      "name": "Anhaltinischer Saalstein"
     }
   ],
   "notices": [
