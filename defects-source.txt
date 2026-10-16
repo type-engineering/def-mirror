@@ -1,13 +1,13 @@
 ACHTUNG! Ab 1. Januar 2025 versetzen wir unsere numerische Stempelstelle Nummer 149 vom aktuellen Standort „Kleine Oker“ zum neuen Standort „Mühlenberg Altenauer Herzweg“ N51.803286 E 10.450144
-HWN 22 Gelber Brink
+HWN 31 Agnesberg
 HWN 23 Molkenhausstern
-HWN 28 Steinerne Renne
 HWN 32 Gasth. Christianental
 HWN 45 Dicke Tannen
 HWN 94 Dreiherrenstein (am Brandhai 48A)
 HWN 114 Ramseck
 HWN 140 Eselsplatz
 HWN 150 Großer Knollen
+HWN 192 Historischer Gipsbrennofen
 Oder Minigolf
 Brandberg
 Talsperre Kelbra

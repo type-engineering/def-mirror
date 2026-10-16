@@ -1,28 +1,22 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-15T05:07:37+00:00",
-  "validUntil": "2026-10-22T05:07:37+00:00",
+  "generatedAt": "2026-10-16T05:07:34+00:00",
+  "validUntil": "2026-10-23T05:07:34+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "2108cc28f219ade285fb4be015169a3240fc5ec3d6d2af6752649582871f396b",
-  "extractSha256": "9b6d659a7577f04580a0d6381e662ad728384c2ca865206a16597481c8770eec",
+  "sourceSha256": "2f3d0396a2481a511a678e6fece61fa49dde993566fc489eb32ba061bb96cffb",
+  "extractSha256": "9328372ed28cfc40d44fe46b18797d88930962d19f09c7f57663722e08ef4ef3",
   "defects": [
     {
-      "id": "b5da43335147",
+      "id": "75a9006dbdb0",
       "severity": "warning",
-      "station": 22,
-      "name": "Gelber Brink"
+      "station": 31,
+      "name": "Agnesberg"
     },
     {
       "id": "4b8a5da0dfe0",
       "severity": "warning",
       "station": 23,
       "name": "Molkenhausstern"
-    },
-    {
-      "id": "fde9c95c8d9b",
-      "severity": "warning",
-      "station": 28,
-      "name": "Steinerne Renne"
     },
     {
       "id": "a5fa6b6443a9",
@@ -59,6 +53,12 @@
       "severity": "warning",
       "station": 150,
       "name": "Großer Knollen"
+    },
+    {
+      "id": "a07b5b3bdc1c",
+      "severity": "warning",
+      "station": 192,
+      "name": "Historischer Gipsbrennofen"
     }
   ],
   "notices": [
