@@ -1,11 +1,17 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T05:07:33+00:00",
-  "validUntil": "2026-10-25T05:07:33+00:00",
+  "generatedAt": "2026-10-19T05:07:33+00:00",
+  "validUntil": "2026-10-26T05:07:33+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "08a79fdc358cc1a52ee2f67e3658b7306087b40381fb95c21a6b1192f814d140",
-  "extractSha256": "afe6c97c5e1852a3963c737259cfdc15bb05b55509a11b034876a455333dbda8",
+  "sourceSha256": "1f3f7705a9edae9fe3e0bc97dc99558d316754bfacf7231352027826ae3f31f5",
+  "extractSha256": "34da31dc75c63431052169568a5ddca166ee9f3edfc174196fbdb39852cfbc8c",
   "defects": [
+    {
+      "id": "0a65631467df",
+      "severity": "warning",
+      "station": 12,
+      "name": "Achtermannshöhe"
+    },
     {
       "id": "712c15555d6e",
       "severity": "warning",
@@ -17,12 +23,6 @@
       "severity": "warning",
       "station": 31,
       "name": "Agnesberg"
-    },
-    {
-      "id": "4b8a5da0dfe0",
-      "severity": "warning",
-      "station": 23,
-      "name": "Molkenhausstern"
     },
     {
       "id": "a5fa6b6443a9",
@@ -49,6 +49,12 @@
       "name": "Ramseck"
     },
     {
+      "id": "b6c7528e7f47",
+      "severity": "warning",
+      "station": 124,
+      "name": "Köte am Heidestieg"
+    },
+    {
       "id": "1f777d8cc4bd",
       "severity": "warning",
       "station": 136,
@@ -61,16 +67,40 @@
       "name": "Eselsplatz"
     },
     {
+      "id": "ee50d788551c",
+      "severity": "warning",
+      "station": 149,
+      "name": "Herzweg Mühlenberg"
+    },
+    {
       "id": "9f8e8f64a6d7",
       "severity": "warning",
       "station": 150,
       "name": "Großer Knollen"
     },
     {
+      "id": "7b2ff455a3ec",
+      "severity": "warning",
+      "station": 180,
+      "name": "Alter Kohlenschacht"
+    },
+    {
+      "id": "53550a3d0aaa",
+      "severity": "warning",
+      "station": 155,
+      "name": "Rehberger Grabenhaus"
+    },
+    {
       "id": "a07b5b3bdc1c",
       "severity": "warning",
       "station": 192,
       "name": "Historischer Gipsbrennofen"
+    },
+    {
+      "id": "8afc52f6f1ff",
+      "severity": "warning",
+      "station": 199,
+      "name": "Bismarckturm"
     },
     {
       "id": "9b42b572de83",
@@ -125,9 +155,19 @@
   ],
   "closures": [
     {
-      "id": "7014ad7d4d83",
+      "id": "de61e98be0e0",
       "severity": "critical",
-      "title": "Oder Minigolf"
+      "title": "Feenhöhe"
+    },
+    {
+      "id": "52fec9ba7933",
+      "severity": "critical",
+      "title": "Kleiner Harz"
+    },
+    {
+      "id": "cf524722fddf",
+      "severity": "critical",
+      "title": "Schausägewerk Ehrt"
     },
     {
       "id": "6dc5f61adfaf",
