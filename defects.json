@@ -1,10 +1,10 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-20T05:07:31+00:00",
-  "validUntil": "2026-10-27T05:07:31+00:00",
+  "generatedAt": "2026-10-21T05:07:37+00:00",
+  "validUntil": "2026-10-28T05:07:37+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "9b2241a0e8f13fedad7299adf9d5b24b377e316cae520397ea826856116c6dfe",
-  "extractSha256": "1c4d8dff4d06cfbed2f45afc9408d9bb69f19b380d8249ad24e3f0219b604f83",
+  "sourceSha256": "92c3c2698fa09f860958ac4224bfedbbedf7cebfb2888ccd41db3e967b144a9b",
+  "extractSha256": "d72c07a25ba1e8269c280c463313de1b6aafd81bf4052667534e17979e7d03e5",
   "defects": [
     {
       "id": "0a65631467df",
@@ -19,10 +19,28 @@
       "name": "Mönchsbuche"
     },
     {
+      "id": "3a21da373a7c",
+      "severity": "warning",
+      "station": 95,
+      "name": "Ilfelder Wetterfahne"
+    },
+    {
+      "id": "68bd4a44777d",
+      "severity": "warning",
+      "station": 96,
+      "name": "Steinmühle"
+    },
+    {
       "id": "95a02bbd7b50",
       "severity": "warning",
       "station": 106,
       "name": "Schöne Aussicht Bielstein"
+    },
+    {
+      "id": "c0541f601a94",
+      "severity": "warning",
+      "station": 112,
+      "name": "Liebesbankweg"
     },
     {
       "id": "1f777d8cc4bd",
