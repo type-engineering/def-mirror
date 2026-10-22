@@ -1,23 +1,11 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-21T05:07:37+00:00",
-  "validUntil": "2026-10-28T05:07:37+00:00",
+  "generatedAt": "2026-10-22T05:07:42+00:00",
+  "validUntil": "2026-10-29T05:07:42+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "92c3c2698fa09f860958ac4224bfedbbedf7cebfb2888ccd41db3e967b144a9b",
-  "extractSha256": "d72c07a25ba1e8269c280c463313de1b6aafd81bf4052667534e17979e7d03e5",
+  "sourceSha256": "b98a88a40fa94ce0e10eebe5aad6df849b9367e98816ef160e3b449778a79915",
+  "extractSha256": "fb7c41940008a6bf893c7444651ce6cd81d79c93ff67c5f697bcd2859a27bc19",
   "defects": [
-    {
-      "id": "0a65631467df",
-      "severity": "warning",
-      "station": 12,
-      "name": "Achtermannshöhe"
-    },
-    {
-      "id": "712c15555d6e",
-      "severity": "warning",
-      "station": 26,
-      "name": "Mönchsbuche"
-    },
     {
       "id": "3a21da373a7c",
       "severity": "warning",
@@ -31,58 +19,10 @@
       "name": "Steinmühle"
     },
     {
-      "id": "95a02bbd7b50",
+      "id": "acbcd4ccea9c",
       "severity": "warning",
-      "station": 106,
-      "name": "Schöne Aussicht Bielstein"
-    },
-    {
-      "id": "c0541f601a94",
-      "severity": "warning",
-      "station": 112,
-      "name": "Liebesbankweg"
-    },
-    {
-      "id": "1f777d8cc4bd",
-      "severity": "warning",
-      "station": 136,
-      "name": "Eckersprung"
-    },
-    {
-      "id": "9f8e8f64a6d7",
-      "severity": "warning",
-      "station": 150,
-      "name": "Großer Knollen"
-    },
-    {
-      "id": "7b2ff455a3ec",
-      "severity": "warning",
-      "station": 180,
-      "name": "Alter Kohlenschacht"
-    },
-    {
-      "id": "53550a3d0aaa",
-      "severity": "warning",
-      "station": 155,
-      "name": "Rehberger Grabenhaus"
-    },
-    {
-      "id": "a07b5b3bdc1c",
-      "severity": "warning",
-      "station": 192,
-      "name": "Historischer Gipsbrennofen"
-    },
-    {
-      "id": "8afc52f6f1ff",
-      "severity": "warning",
-      "station": 199,
-      "name": "Bismarckturm"
-    },
-    {
-      "id": "9b42b572de83",
-      "severity": "warning",
-      "station": 213,
-      "name": "Bauerngraben"
+      "station": 217,
+      "name": "Sonnenkappe Oderteich"
     }
   ],
   "notices": [

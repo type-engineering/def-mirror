@@ -1,17 +1,7 @@
 ACHTUNG! Ab 1. Januar 2025 versetzen wir unsere numerische Stempelstelle Nummer 149 vom aktuellen Standort „Kleine Oker“ zum neuen Standort „Mühlenberg Altenauer Herzweg“ N51.803286 E 10.450144
-HWN 12 Achtermannshöhe
-HWN 26 Mönchsbuche
 HWN 95 Ilfelder Wetterfahne
 HWN 96 Steinmühle
-HWN 106 Schöne Aussicht Bielstein
-HWN 112 Liebesbankweg
-HWN 136 Eckersprung
-HWN 150 Großer Knollen
-HWN 180 Alter Kohlenschacht
-HWN 155 Rehberger Grabenhaus
-HWN 192 Historischer Gipsbrennofen
-HWN 199 Bismarckturm
-HWN 213 Bauerngraben
+HWN 217 Sonnenkappe Oderteich
 Schausägewerk Ehrt
 Brandberg
 Talsperre Kelbra
