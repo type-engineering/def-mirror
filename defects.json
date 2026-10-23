@@ -1,28 +1,28 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-22T05:07:42+00:00",
-  "validUntil": "2026-10-29T05:07:42+00:00",
+  "generatedAt": "2026-10-23T05:07:32+00:00",
+  "validUntil": "2026-10-30T05:07:32+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "b98a88a40fa94ce0e10eebe5aad6df849b9367e98816ef160e3b449778a79915",
-  "extractSha256": "fb7c41940008a6bf893c7444651ce6cd81d79c93ff67c5f697bcd2859a27bc19",
+  "sourceSha256": "77128222565f8a29fe960d1f7f40281b3c89836a0e6930b5eea99e86599daaf1",
+  "extractSha256": "fc51bf70a0d7fdbaa127ad2f23c73c1f7a66e987437489ebfb397e4a4667a811",
   "defects": [
     {
-      "id": "3a21da373a7c",
+      "id": "0a65631467df",
       "severity": "warning",
-      "station": 95,
-      "name": "Ilfelder Wetterfahne"
+      "station": 12,
+      "name": "Achtermannshöhe"
     },
     {
-      "id": "68bd4a44777d",
+      "id": "c0541f601a94",
       "severity": "warning",
-      "station": 96,
-      "name": "Steinmühle"
+      "station": 112,
+      "name": "Liebesbankweg"
     },
     {
-      "id": "acbcd4ccea9c",
+      "id": "53550a3d0aaa",
       "severity": "warning",
-      "station": 217,
-      "name": "Sonnenkappe Oderteich"
+      "station": 155,
+      "name": "Rehberger Grabenhaus"
     }
   ],
   "notices": [
@@ -74,6 +74,11 @@
       "id": "cf524722fddf",
       "severity": "critical",
       "title": "Schausägewerk Ehrt"
+    },
+    {
+      "id": "353be1d95454",
+      "severity": "critical",
+      "title": "Vogelschutzgebiet Kelbra"
     },
     {
       "id": "6dc5f61adfaf",
