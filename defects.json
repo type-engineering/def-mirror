@@ -1,28 +1,34 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-25T05:07:39+00:00",
-  "validUntil": "2026-11-01T05:07:39+00:00",
+  "generatedAt": "2026-10-26T05:07:32+00:00",
+  "validUntil": "2026-11-02T05:07:32+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "bd486b65d2fefa71f632796e38efb0bfc5106f078e6164e8bd5e9c5ece12e48c",
-  "extractSha256": "fc51bf70a0d7fdbaa127ad2f23c73c1f7a66e987437489ebfb397e4a4667a811",
+  "sourceSha256": "ecbf5b80d5c643c2fe8675cc4ad76eb0c0d9ac52a36d19957b5e4bc0fc09903d",
+  "extractSha256": "32ef6f54761b7e031eb57309bb1fe1ade600d80185e7e6f180b0275faa27e35f",
   "defects": [
     {
-      "id": "0a65631467df",
+      "id": "8be27b349ddd",
       "severity": "warning",
-      "station": 12,
-      "name": "Achtermannshöhe"
+      "station": 92,
+      "name": "Poppenberg"
     },
     {
-      "id": "c0541f601a94",
+      "id": "1f777d8cc4bd",
       "severity": "warning",
-      "station": 112,
-      "name": "Liebesbankweg"
+      "station": 136,
+      "name": "Eckersprung"
     },
     {
       "id": "53550a3d0aaa",
       "severity": "warning",
       "station": 155,
       "name": "Rehberger Grabenhaus"
+    },
+    {
+      "id": "dd0f0582346b",
+      "severity": "warning",
+      "station": 188,
+      "name": "Teufelsmauer"
     }
   ],
   "notices": [
@@ -71,6 +77,11 @@
   ],
   "closures": [
     {
+      "id": "fd75e49ebc40",
+      "severity": "critical",
+      "title": "Station 4 Pferdebahn Riestedt"
+    },
+    {
       "id": "cf524722fddf",
       "severity": "critical",
       "title": "Schausägewerk Ehrt"
@@ -89,6 +100,11 @@
       "id": "fc1f7c651d2c",
       "severity": "critical",
       "title": "Talsperre Kelbra"
+    },
+    {
+      "id": "de61e98be0e0",
+      "severity": "critical",
+      "title": "Feenhöhe"
     },
     {
       "id": "28a940d7bf6d",
