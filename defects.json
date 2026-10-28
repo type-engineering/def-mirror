@@ -1,16 +1,34 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-27T05:07:35+00:00",
-  "validUntil": "2026-11-03T05:07:35+00:00",
+  "generatedAt": "2026-10-28T05:07:33+00:00",
+  "validUntil": "2026-11-04T05:07:33+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "197f5601a37e3eb3ad5f5b3eb9db1d2d1a6681ff3c5b598112c9ca4f142ee0d5",
-  "extractSha256": "32ef6f54761b7e031eb57309bb1fe1ade600d80185e7e6f180b0275faa27e35f",
+  "sourceSha256": "59b7919d4cee6881d582af5994d541bb42bffebe9a09d6c7efdd7ba22108c7c4",
+  "extractSha256": "1208afa315134d44e246fecae62aac922c2950107daaddab7cd808fd7430ed8d",
   "defects": [
     {
       "id": "8be27b349ddd",
       "severity": "warning",
       "station": 92,
       "name": "Poppenberg"
+    },
+    {
+      "id": "5521af49fafe",
+      "severity": "warning",
+      "station": 132,
+      "name": "Köte Brockenblick"
+    },
+    {
+      "id": "6c241d65ce13",
+      "severity": "warning",
+      "station": 133,
+      "name": "Förster-Ludewig-Platz"
+    },
+    {
+      "id": "00967b13ee6f",
+      "severity": "warning",
+      "station": 135,
+      "name": "Wolfswarte"
     },
     {
       "id": "1f777d8cc4bd",
@@ -25,10 +43,10 @@
       "name": "Rehberger Grabenhaus"
     },
     {
-      "id": "dd0f0582346b",
+      "id": "97965060328a",
       "severity": "warning",
       "station": 188,
-      "name": "Teufelsmauer"
+      "name": "Teufelsmauer Weddersleben"
     }
   ],
   "notices": [
@@ -77,34 +95,19 @@
   ],
   "closures": [
     {
-      "id": "fd75e49ebc40",
-      "severity": "critical",
-      "title": "Station 4 Pferdebahn Riestedt"
-    },
-    {
       "id": "cf524722fddf",
       "severity": "critical",
       "title": "Schausägewerk Ehrt"
     },
     {
-      "id": "353be1d95454",
+      "id": "c1fa74e0a52e",
       "severity": "critical",
-      "title": "Vogelschutzgebiet Kelbra"
+      "title": "Pferdebahn Riestedt"
     },
     {
       "id": "6dc5f61adfaf",
       "severity": "critical",
       "title": "Brandberg"
-    },
-    {
-      "id": "fc1f7c651d2c",
-      "severity": "critical",
-      "title": "Talsperre Kelbra"
-    },
-    {
-      "id": "de61e98be0e0",
-      "severity": "critical",
-      "title": "Feenhöhe"
     },
     {
       "id": "28a940d7bf6d",
