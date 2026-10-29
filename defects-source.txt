@@ -4,7 +4,6 @@ HWN 132 Köte Brockenblick
 HWN 133 Förster-Ludewig-Platz
 HWN 135 Wolfswarte
 HWN 136 Eckersprung
-HWN 155 Rehberger Grabenhaus
 HWN 188 Teufelsmauer Weddersleben
 Schausägewerk Ehrt
 Pferdebahn Riestedt

@@ -1,10 +1,10 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-28T05:07:33+00:00",
-  "validUntil": "2026-11-04T05:07:33+00:00",
+  "generatedAt": "2026-10-29T05:07:33+00:00",
+  "validUntil": "2026-11-05T05:07:33+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "59b7919d4cee6881d582af5994d541bb42bffebe9a09d6c7efdd7ba22108c7c4",
-  "extractSha256": "1208afa315134d44e246fecae62aac922c2950107daaddab7cd808fd7430ed8d",
+  "sourceSha256": "40909ff6240d16acaaba4e5ab98c37ef30d39e321c87407b0378585a3f6361ee",
+  "extractSha256": "006fa5ec934547dd2f6be778a055f43157206c037b7e197ed10bb3a09fd19e33",
   "defects": [
     {
       "id": "8be27b349ddd",
@@ -35,12 +35,6 @@
       "severity": "warning",
       "station": 136,
       "name": "Eckersprung"
-    },
-    {
-      "id": "53550a3d0aaa",
-      "severity": "warning",
-      "station": 155,
-      "name": "Rehberger Grabenhaus"
     },
     {
       "id": "97965060328a",
