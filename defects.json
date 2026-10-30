@@ -1,16 +1,64 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-29T05:07:33+00:00",
-  "validUntil": "2026-11-05T05:07:33+00:00",
+  "generatedAt": "2026-10-30T11:25:25+00:00",
+  "validUntil": "2026-11-06T11:25:25+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "40909ff6240d16acaaba4e5ab98c37ef30d39e321c87407b0378585a3f6361ee",
-  "extractSha256": "006fa5ec934547dd2f6be778a055f43157206c037b7e197ed10bb3a09fd19e33",
+  "sourceSha256": "4e293d9b48b652ecf084100060c8521188f62453892d68a2eb48bf17c26e725d",
+  "extractSha256": "9cf7b6db0a06fe98544f95a2562e9ea4ef8b46fe8583ae2299ea92a0e7de4934",
   "defects": [
     {
       "id": "8be27b349ddd",
       "severity": "warning",
       "station": 92,
       "name": "Poppenberg"
+    },
+    {
+      "id": "260bc5df45fa",
+      "severity": "warning",
+      "station": 11,
+      "name": "Eckerloch"
+    },
+    {
+      "id": "d2684755ce13",
+      "severity": "warning",
+      "station": 17,
+      "name": "Trudenstein"
+    },
+    {
+      "id": "4c97ceff0016",
+      "severity": "warning",
+      "station": 30,
+      "name": "Ilsestein"
+    },
+    {
+      "id": "a5b5d4c38eac",
+      "severity": "warning",
+      "station": 45,
+      "name": "Dicke Tannen"
+    },
+    {
+      "id": "73bc336806e6",
+      "severity": "warning",
+      "station": 51,
+      "name": "Carlshausturm"
+    },
+    {
+      "id": "6fbcd4410d78",
+      "severity": "warning",
+      "station": 102,
+      "name": "Lageswarte"
+    },
+    {
+      "id": "644fff9e4c25",
+      "severity": "warning",
+      "station": 106,
+      "name": "Schöne Aussicht"
+    },
+    {
+      "id": "c0541f601a94",
+      "severity": "warning",
+      "station": 112,
+      "name": "Liebesbankweg"
     },
     {
       "id": "5521af49fafe",
@@ -35,6 +83,30 @@
       "severity": "warning",
       "station": 136,
       "name": "Eckersprung"
+    },
+    {
+      "id": "b4e3e9eb0c92",
+      "severity": "warning",
+      "station": 148,
+      "name": "Naturmythenpfad Silberteich"
+    },
+    {
+      "id": "d6c26a47f914",
+      "severity": "warning",
+      "station": 153,
+      "name": "Goedeckenplatz"
+    },
+    {
+      "id": "b310538cbf68",
+      "severity": "warning",
+      "station": 169,
+      "name": "Molkenhaus"
+    },
+    {
+      "id": "5ec14257d80a",
+      "severity": "warning",
+      "station": 216,
+      "name": "Lutherbuche"
     },
     {
       "id": "97965060328a",
