@@ -1,17 +1,11 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-31T05:07:33+00:00",
-  "validUntil": "2026-11-07T05:07:33+00:00",
+  "generatedAt": "2026-11-01T05:07:36+00:00",
+  "validUntil": "2026-11-08T05:07:36+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "a9c2ac37ad3214457525b7c5a60fa27175adbc18c88f0d6bd7654c045f0fe4f7",
-  "extractSha256": "9cf7b6db0a06fe98544f95a2562e9ea4ef8b46fe8583ae2299ea92a0e7de4934",
+  "sourceSha256": "cfba4d6ab51541f2a7e0c1612c4a218038cf676cbf5793abf0fa30edeeca4761",
+  "extractSha256": "cc15c0818819734dc26870b5f7e52c99fffd475c39d108b9da791fde02d1a8b0",
   "defects": [
-    {
-      "id": "8be27b349ddd",
-      "severity": "warning",
-      "station": 92,
-      "name": "Poppenberg"
-    },
     {
       "id": "260bc5df45fa",
       "severity": "warning",
@@ -43,16 +37,40 @@
       "name": "Carlshausturm"
     },
     {
+      "id": "808f39a792aa",
+      "severity": "warning",
+      "station": 53,
+      "name": "Hassel-Vorsperre"
+    },
+    {
+      "id": "3957479c83cf",
+      "severity": "warning",
+      "station": 63,
+      "name": "Schöneburg"
+    },
+    {
+      "id": "837921ba0cf6",
+      "severity": "warning",
+      "station": 92,
+      "name": "Poppenbergturm"
+    },
+    {
+      "id": "a303ea90466a",
+      "severity": "warning",
+      "station": 99,
+      "name": "Harzer Holzdampflok"
+    },
+    {
       "id": "6fbcd4410d78",
       "severity": "warning",
       "station": 102,
       "name": "Lageswarte"
     },
     {
-      "id": "644fff9e4c25",
+      "id": "95a02bbd7b50",
       "severity": "warning",
       "station": 106,
-      "name": "Schöne Aussicht"
+      "name": "Schöne Aussicht Bielstein"
     },
     {
       "id": "c0541f601a94",
@@ -61,16 +79,16 @@
       "name": "Liebesbankweg"
     },
     {
-      "id": "5521af49fafe",
+      "id": "2080eead764b",
       "severity": "warning",
-      "station": 132,
-      "name": "Köte Brockenblick"
+      "station": 121,
+      "name": "Aussichtsreich"
     },
     {
-      "id": "6c241d65ce13",
+      "id": "ae96de4173cd",
       "severity": "warning",
-      "station": 133,
-      "name": "Förster-Ludewig-Platz"
+      "station": 128,
+      "name": "Huttaler Widerwaage"
     },
     {
       "id": "00967b13ee6f",
@@ -91,10 +109,22 @@
       "name": "Naturmythenpfad Silberteich"
     },
     {
+      "id": "f09b1fa56df8",
+      "severity": "warning",
+      "station": 152,
+      "name": "Knollenkreuz"
+    },
+    {
       "id": "d6c26a47f914",
       "severity": "warning",
       "station": 153,
       "name": "Goedeckenplatz"
+    },
+    {
+      "id": "71316bcb77ac",
+      "severity": "warning",
+      "station": 154,
+      "name": "Dreibrodestein"
     },
     {
       "id": "b310538cbf68",
@@ -103,16 +133,16 @@
       "name": "Molkenhaus"
     },
     {
+      "id": "edc176960e83",
+      "severity": "warning",
+      "station": 185,
+      "name": "Preußenturm"
+    },
+    {
       "id": "5ec14257d80a",
       "severity": "warning",
       "station": 216,
       "name": "Lutherbuche"
-    },
-    {
-      "id": "97965060328a",
-      "severity": "warning",
-      "station": 188,
-      "name": "Teufelsmauer Weddersleben"
     }
   ],
   "notices": [
@@ -166,9 +196,14 @@
       "title": "Schausägewerk Ehrt"
     },
     {
-      "id": "c1fa74e0a52e",
+      "id": "6ef655616459",
       "severity": "critical",
-      "title": "Pferdebahn Riestedt"
+      "title": "Schäderpavillon"
+    },
+    {
+      "id": "571d23f62c38",
+      "severity": "critical",
+      "title": "Kartoffelhaus Wernigerode"
     },
     {
       "id": "6dc5f61adfaf",
