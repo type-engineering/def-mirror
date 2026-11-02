@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-01T05:07:36+00:00",
-  "validUntil": "2026-11-08T05:07:36+00:00",
+  "generatedAt": "2026-11-02T05:07:34+00:00",
+  "validUntil": "2026-11-09T05:07:34+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "cfba4d6ab51541f2a7e0c1612c4a218038cf676cbf5793abf0fa30edeeca4761",
+  "sourceSha256": "e0a0cf419451011d7d17cbc078f3e552d2c3796d2d9198b4bcb5a75f5e9f1c80",
   "extractSha256": "cc15c0818819734dc26870b5f7e52c99fffd475c39d108b9da791fde02d1a8b0",
   "defects": [
     {
