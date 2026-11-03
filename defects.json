@@ -1,29 +1,11 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-02T05:07:34+00:00",
-  "validUntil": "2026-11-09T05:07:34+00:00",
+  "generatedAt": "2026-11-03T05:07:32+00:00",
+  "validUntil": "2026-11-10T05:07:32+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "e0a0cf419451011d7d17cbc078f3e552d2c3796d2d9198b4bcb5a75f5e9f1c80",
-  "extractSha256": "cc15c0818819734dc26870b5f7e52c99fffd475c39d108b9da791fde02d1a8b0",
+  "sourceSha256": "2f3c1d3ddf4935d1708096939b335af7c93e3ac5598c5667e3d2ffc03242ac82",
+  "extractSha256": "af0ea200ac1f43caa8d1469ec168dc5ec5d621f5153ac1786d4becd6ce2bdc7a",
   "defects": [
-    {
-      "id": "260bc5df45fa",
-      "severity": "warning",
-      "station": 11,
-      "name": "Eckerloch"
-    },
-    {
-      "id": "d2684755ce13",
-      "severity": "warning",
-      "station": 17,
-      "name": "Trudenstein"
-    },
-    {
-      "id": "4c97ceff0016",
-      "severity": "warning",
-      "station": 30,
-      "name": "Ilsestein"
-    },
     {
       "id": "a5b5d4c38eac",
       "severity": "warning",
@@ -31,28 +13,10 @@
       "name": "Dicke Tannen"
     },
     {
-      "id": "73bc336806e6",
+      "id": "6d67d9e18cdd",
       "severity": "warning",
-      "station": 51,
-      "name": "Carlshausturm"
-    },
-    {
-      "id": "808f39a792aa",
-      "severity": "warning",
-      "station": 53,
-      "name": "Hassel-Vorsperre"
-    },
-    {
-      "id": "3957479c83cf",
-      "severity": "warning",
-      "station": 63,
-      "name": "Schöneburg"
-    },
-    {
-      "id": "837921ba0cf6",
-      "severity": "warning",
-      "station": 92,
-      "name": "Poppenbergturm"
+      "station": 85,
+      "name": "Wasserkunst Thumkuhlental"
     },
     {
       "id": "a303ea90466a",
@@ -61,10 +25,10 @@
       "name": "Harzer Holzdampflok"
     },
     {
-      "id": "6fbcd4410d78",
+      "id": "4e49aed560ff",
       "severity": "warning",
-      "station": 102,
-      "name": "Lageswarte"
+      "station": 105,
+      "name": "Prinzenlaube"
     },
     {
       "id": "95a02bbd7b50",
@@ -79,52 +43,10 @@
       "name": "Liebesbankweg"
     },
     {
-      "id": "2080eead764b",
-      "severity": "warning",
-      "station": 121,
-      "name": "Aussichtsreich"
-    },
-    {
-      "id": "ae96de4173cd",
-      "severity": "warning",
-      "station": 128,
-      "name": "Huttaler Widerwaage"
-    },
-    {
-      "id": "00967b13ee6f",
-      "severity": "warning",
-      "station": 135,
-      "name": "Wolfswarte"
-    },
-    {
-      "id": "1f777d8cc4bd",
-      "severity": "warning",
-      "station": 136,
-      "name": "Eckersprung"
-    },
-    {
       "id": "b4e3e9eb0c92",
       "severity": "warning",
       "station": 148,
       "name": "Naturmythenpfad Silberteich"
-    },
-    {
-      "id": "f09b1fa56df8",
-      "severity": "warning",
-      "station": 152,
-      "name": "Knollenkreuz"
-    },
-    {
-      "id": "d6c26a47f914",
-      "severity": "warning",
-      "station": 153,
-      "name": "Goedeckenplatz"
-    },
-    {
-      "id": "71316bcb77ac",
-      "severity": "warning",
-      "station": 154,
-      "name": "Dreibrodestein"
     },
     {
       "id": "b310538cbf68",
@@ -137,6 +59,12 @@
       "severity": "warning",
       "station": 185,
       "name": "Preußenturm"
+    },
+    {
+      "id": "e0ff050c0402",
+      "severity": "warning",
+      "station": 195,
+      "name": "Köthener Hütte"
     },
     {
       "id": "5ec14257d80a",

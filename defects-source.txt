@@ -1,26 +1,14 @@
 ACHTUNG! Ab 1. Januar 2025 versetzen wir unsere numerische Stempelstelle Nummer 149 vom aktuellen Standort „Kleine Oker“ zum neuen Standort „Mühlenberg Altenauer Herzweg“ N51.803286 E 10.450144
-HWN 11 Eckerloch
-HWN 17 Trudenstein
-HWN 30 Ilsestein
 HWN 45 Dicke Tannen
-HWN 51 Carlshausturm
-HWN 53 Hassel-Vorsperre
-HWN 63 Schöneburg
-HWN 92 Poppenbergturm
+HWN 85 Wasserkunst Thumkuhlental
 HWN 99 Harzer Holzdampflok
-HWN 102 Lageswarte
+HWN 105 Prinzenlaube
 HWN 106 Schöne Aussicht Bielstein
 HWN 112 Liebesbankweg
-HWN 121 Aussichtsreich
-HWN 128 Huttaler Widerwaage
-HWN 135 Wolfswarte
-HWN 136 Eckersprung
 HWN 148 Naturmythenpfad Silberteich
-HWN 152 Knollenkreuz
-HWN 153 Goedeckenplatz
-HWN 154 Dreibrodestein
 HWN 169 Molkenhaus
 HWN 185 Preußenturm
+HWN 195 Köthener Hütte
 HWN 216 Lutherbuche
 Schausägewerk Ehrt
 Schäderpavillon
