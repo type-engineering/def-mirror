@@ -1,16 +1,22 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-04T05:07:38+00:00",
-  "validUntil": "2026-11-11T05:07:38+00:00",
+  "generatedAt": "2026-11-05T05:07:34+00:00",
+  "validUntil": "2026-11-12T05:07:34+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "5fac01c5f742e6b0128958b5db5403bb31bdc58a08deb20cfeaeb0e20a192310",
-  "extractSha256": "af0ea200ac1f43caa8d1469ec168dc5ec5d621f5153ac1786d4becd6ce2bdc7a",
+  "sourceSha256": "1935d849dadc3d557ee608d5690076cf592fd4809cd6b331440956ab0eb46624",
+  "extractSha256": "461acb3c3d18a1487c1d290e83b849b383f50bbea4b7100294ef2f317ea44638",
   "defects": [
     {
-      "id": "a5b5d4c38eac",
+      "id": "0a65631467df",
       "severity": "warning",
-      "station": 45,
-      "name": "Dicke Tannen"
+      "station": 12,
+      "name": "Achtermannshöhe"
+    },
+    {
+      "id": "24393232aef9",
+      "severity": "warning",
+      "station": 24,
+      "name": "Wolfsklippe"
     },
     {
       "id": "6d67d9e18cdd",
