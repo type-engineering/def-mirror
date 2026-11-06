@@ -1,10 +1,10 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-05T05:07:34+00:00",
-  "validUntil": "2026-11-12T05:07:34+00:00",
+  "generatedAt": "2026-11-06T05:07:33+00:00",
+  "validUntil": "2026-11-13T05:07:33+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "1935d849dadc3d557ee608d5690076cf592fd4809cd6b331440956ab0eb46624",
-  "extractSha256": "461acb3c3d18a1487c1d290e83b849b383f50bbea4b7100294ef2f317ea44638",
+  "sourceSha256": "ef6dea0529a3a2bad8a3121451cf63da1f6b29e1fedb8b7e13c373582274b2f4",
+  "extractSha256": "a834b78203a36d5558d6353de9a5e751f80c248183ff0b92daf1591d041e8512",
   "defects": [
     {
       "id": "0a65631467df",
@@ -19,22 +19,22 @@
       "name": "Wolfsklippe"
     },
     {
+      "id": "cce10eed3843",
+      "severity": "warning",
+      "station": 73,
+      "name": "Glockenstein"
+    },
+    {
       "id": "6d67d9e18cdd",
       "severity": "warning",
       "station": 85,
       "name": "Wasserkunst Thumkuhlental"
     },
     {
-      "id": "a303ea90466a",
+      "id": "8e7c903689b2",
       "severity": "warning",
-      "station": 99,
-      "name": "Harzer Holzdampflok"
-    },
-    {
-      "id": "4e49aed560ff",
-      "severity": "warning",
-      "station": 105,
-      "name": "Prinzenlaube"
+      "station": 97,
+      "name": "Ziegenalm Sophienhof"
     },
     {
       "id": "95a02bbd7b50",
