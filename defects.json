@@ -1,10 +1,10 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-06T05:07:33+00:00",
-  "validUntil": "2026-11-13T05:07:33+00:00",
+  "generatedAt": "2026-11-07T05:07:37+00:00",
+  "validUntil": "2026-11-14T05:07:37+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "ef6dea0529a3a2bad8a3121451cf63da1f6b29e1fedb8b7e13c373582274b2f4",
-  "extractSha256": "a834b78203a36d5558d6353de9a5e751f80c248183ff0b92daf1591d041e8512",
+  "sourceSha256": "7fea50c9668dfb99adb6701f6028a3e55edbd43162ab99c2748d17c87b4cbc59",
+  "extractSha256": "f21d505dbc23ccf3031462a7ae3e73127408c139903d4452652202534d96a2f0",
   "defects": [
     {
       "id": "0a65631467df",
@@ -25,22 +25,10 @@
       "name": "Glockenstein"
     },
     {
-      "id": "6d67d9e18cdd",
-      "severity": "warning",
-      "station": 85,
-      "name": "Wasserkunst Thumkuhlental"
-    },
-    {
       "id": "8e7c903689b2",
       "severity": "warning",
       "station": 97,
       "name": "Ziegenalm Sophienhof"
-    },
-    {
-      "id": "95a02bbd7b50",
-      "severity": "warning",
-      "station": 106,
-      "name": "Schöne Aussicht Bielstein"
     },
     {
       "id": "c0541f601a94",
