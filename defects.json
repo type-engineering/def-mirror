@@ -1,10 +1,10 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-09T05:07:30+00:00",
-  "validUntil": "2026-11-16T05:07:30+00:00",
+  "generatedAt": "2026-11-10T05:07:35+00:00",
+  "validUntil": "2026-11-17T05:07:35+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "dd8a81d4a173e4757f7b541edeb513986fefa08689fd14eb5ece8374a133deb6",
-  "extractSha256": "f21d505dbc23ccf3031462a7ae3e73127408c139903d4452652202534d96a2f0",
+  "sourceSha256": "c4c7b5c62fdd9bb101535f5b747d0b233aa1123841fde5f03c5f06e7e82dbbe0",
+  "extractSha256": "aa52e3ccccc4797e6375f7bf653dea9d31299f6274a343dde1cee55cb3ead578",
   "defects": [
     {
       "id": "0a65631467df",
@@ -49,6 +49,12 @@
       "name": "Molkenhaus"
     },
     {
+      "id": "7b2ff455a3ec",
+      "severity": "warning",
+      "station": 180,
+      "name": "Alter Kohlenschacht"
+    },
+    {
       "id": "edc176960e83",
       "severity": "warning",
       "station": 185,
@@ -59,6 +65,18 @@
       "severity": "warning",
       "station": 195,
       "name": "Köthener Hütte"
+    },
+    {
+      "id": "8afc52f6f1ff",
+      "severity": "warning",
+      "station": 199,
+      "name": "Bismarckturm"
+    },
+    {
+      "id": "03fb54c2b3c1",
+      "severity": "warning",
+      "station": 206,
+      "name": "Hahnestein"
     },
     {
       "id": "5ec14257d80a",
@@ -126,6 +144,11 @@
       "id": "571d23f62c38",
       "severity": "critical",
       "title": "Kartoffelhaus Wernigerode"
+    },
+    {
+      "id": "5e5eb0c7bfe9",
+      "severity": "critical",
+      "title": "Märchenweg Wernigerode"
     },
     {
       "id": "6dc5f61adfaf",

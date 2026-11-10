@@ -6,12 +6,16 @@ HWN 97 Ziegenalm Sophienhof
 HWN 112 Liebesbankweg
 HWN 148 Naturmythenpfad Silberteich
 HWN 169 Molkenhaus
+HWN 180 Alter Kohlenschacht
 HWN 185 Preußenturm
 HWN 195 Köthener Hütte
+HWN 199 Bismarckturm
+HWN 206 Hahnestein
 HWN 216 Lutherbuche
 Schausägewerk Ehrt
 Schäderpavillon
 Kartoffelhaus Wernigerode
+Märchenweg Wernigerode
 Brandberg
 Rund um Quedlinburg – Aholzwarte (entfällt vorläufig!)
 Jubiläumsheft – Bückeberg entfällt!
