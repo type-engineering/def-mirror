@@ -1,28 +1,22 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-11T05:07:28+00:00",
-  "validUntil": "2026-11-18T05:07:28+00:00",
+  "generatedAt": "2026-11-12T05:07:32+00:00",
+  "validUntil": "2026-11-19T05:07:32+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "b792844eb3cea8f14b4a6b0c1eb668579e3638979264062879853d00d39ae362",
-  "extractSha256": "aa52e3ccccc4797e6375f7bf653dea9d31299f6274a343dde1cee55cb3ead578",
+  "sourceSha256": "e8adebf7b89815621f339b6592c8025f3b6e7530d7bf26b32f0728a35dd15b2a",
+  "extractSha256": "41bef4d759d4158368a4a5ff76135181fdfc1d3aa07c16aae561433e1715a855",
   "defects": [
-    {
-      "id": "0a65631467df",
-      "severity": "warning",
-      "station": 12,
-      "name": "Achtermannshöhe"
-    },
-    {
-      "id": "24393232aef9",
-      "severity": "warning",
-      "station": 24,
-      "name": "Wolfsklippe"
-    },
     {
       "id": "cce10eed3843",
       "severity": "warning",
       "station": 73,
       "name": "Glockenstein"
+    },
+    {
+      "id": "1e063d015fdb",
+      "severity": "warning",
+      "station": 86,
+      "name": "Bisongehege"
     },
     {
       "id": "8e7c903689b2",
@@ -31,58 +25,22 @@
       "name": "Ziegenalm Sophienhof"
     },
     {
-      "id": "c0541f601a94",
-      "severity": "warning",
-      "station": 112,
-      "name": "Liebesbankweg"
-    },
-    {
-      "id": "b4e3e9eb0c92",
-      "severity": "warning",
-      "station": 148,
-      "name": "Naturmythenpfad Silberteich"
-    },
-    {
-      "id": "b310538cbf68",
-      "severity": "warning",
-      "station": 169,
-      "name": "Molkenhaus"
-    },
-    {
-      "id": "7b2ff455a3ec",
-      "severity": "warning",
-      "station": 180,
-      "name": "Alter Kohlenschacht"
-    },
-    {
-      "id": "edc176960e83",
-      "severity": "warning",
-      "station": 185,
-      "name": "Preußenturm"
-    },
-    {
       "id": "e0ff050c0402",
       "severity": "warning",
       "station": 195,
       "name": "Köthener Hütte"
     },
     {
-      "id": "8afc52f6f1ff",
+      "id": "e325583ffef7",
       "severity": "warning",
-      "station": 199,
-      "name": "Bismarckturm"
+      "station": 205,
+      "name": "Clusberg"
     },
     {
       "id": "03fb54c2b3c1",
       "severity": "warning",
       "station": 206,
       "name": "Hahnestein"
-    },
-    {
-      "id": "5ec14257d80a",
-      "severity": "warning",
-      "station": 216,
-      "name": "Lutherbuche"
     }
   ],
   "notices": [
@@ -136,19 +94,9 @@
       "title": "Schausägewerk Ehrt"
     },
     {
-      "id": "6ef655616459",
-      "severity": "critical",
-      "title": "Schäderpavillon"
-    },
-    {
       "id": "571d23f62c38",
       "severity": "critical",
       "title": "Kartoffelhaus Wernigerode"
-    },
-    {
-      "id": "5e5eb0c7bfe9",
-      "severity": "critical",
-      "title": "Märchenweg Wernigerode"
     },
     {
       "id": "6dc5f61adfaf",
