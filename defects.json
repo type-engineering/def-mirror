@@ -1,10 +1,10 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-12T05:07:32+00:00",
-  "validUntil": "2026-11-19T05:07:32+00:00",
+  "generatedAt": "2026-11-13T05:07:43+00:00",
+  "validUntil": "2026-11-20T05:07:43+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "e8adebf7b89815621f339b6592c8025f3b6e7530d7bf26b32f0728a35dd15b2a",
-  "extractSha256": "41bef4d759d4158368a4a5ff76135181fdfc1d3aa07c16aae561433e1715a855",
+  "sourceSha256": "3f9b5edf922b51a1add9f1df8e1961913306ac54790b764eaac171d84e2f19d9",
+  "extractSha256": "82b2a137f1ff257b46a6deb885636c8c03d12ef7a81b50415151d325a55ed60d",
   "defects": [
     {
       "id": "cce10eed3843",
@@ -23,12 +23,6 @@
       "severity": "warning",
       "station": 97,
       "name": "Ziegenalm Sophienhof"
-    },
-    {
-      "id": "e0ff050c0402",
-      "severity": "warning",
-      "station": 195,
-      "name": "Köthener Hütte"
     },
     {
       "id": "e325583ffef7",
