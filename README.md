@@ -14,7 +14,7 @@ entstanden ist.
 | Datei | Inhalt |
 |---|---|
 | `defects.json` | Nutzdaten |
-| `defects.signed.json` | dieselben Bytes in einem signierten Umschlag |
+| `defects.signed.json` | Nutzdaten in signiertem Umschlag |
 | `defects-source.txt` | Quell-Extrakt: extrahierte Zeilen vor der Einordnung |
 | `KEYS` | öffentliche Schlüssel (Vertrauensanker) |
 | `tools/` | Prüfwerkzeug und Schemata |
@@ -31,12 +31,12 @@ Geprüft wird in den folgenden Stufen:
 
 1. **Umschlag** Form, Verfahren und Version wie erwartet.
 2. **Signatur** gültig unter dem Schlüssel zur genannten `keyId`. Eine
-   unbekannte `keyId` ist ein Fehler
+   unbekannte `keyId` wird als Fehler gewertet.
 3. **Schema**: Nutzdaten entsprechen `tools/defects.schema.json`.
 4. **Frische**: `validUntil` noch nicht verstrichen?
-5. **Byte-Gleichheit**: die lesbare `defects.json` ist Byte für Byte das, was
+5. **Byte-Gleichheit**: die lesbare `defects.json` ist bitgenau das, was
    signiert wurde.
-6. **Herkunft**: `extractSha256` passt zum mitveröffentlichten Quell-Extrakt.
+6. **Herkunft**: `extractSha256` passt zum veröffentlichten Quell-Extrakt.
 7. **Deckung**: jeder Text im Feed steht so auch im Extrakt. Meldung bei Abweichung.
 
 Exit 0 heißt: alle Stufen bestanden.
