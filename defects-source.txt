@@ -1,10 +1,8 @@
 ACHTUNG! Ab 1. Januar 2025 versetzen wir unsere numerische Stempelstelle Nummer 149 vom aktuellen Standort „Kleine Oker“ zum neuen Standort „Mühlenberg Altenauer Herzweg“ N51.803286 E 10.450144
 HWN 73 Glockenstein
-HWN 86 Bisongehege
-HWN 97 Ziegenalm Sophienhof
 HWN 181 Forstmeister Tannen
-HWN 205 Clusberg
 HWN 206 Hahnestein
+HWN 213 Bauerngraben
 Schausägewerk Ehrt
 Kartoffelhaus Wernigerode
 Brandberg

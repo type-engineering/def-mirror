@@ -1,10 +1,10 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-16T05:07:33+00:00",
-  "validUntil": "2026-11-23T05:07:33+00:00",
+  "generatedAt": "2026-11-17T05:07:35+00:00",
+  "validUntil": "2026-11-24T05:07:35+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "4c2b065304122b58786753366f5ccef118ba557890723ffd478abb78fc3c6b2d",
-  "extractSha256": "4d336bc2981f4b9999596021e53461ee775ce2ed3ca3562b7c79f9e9efdb7c81",
+  "sourceSha256": "d37f4da996fb973277d8fccf0ad897bedcae7644bdab529adda78e630dd5fc99",
+  "extractSha256": "b09966c6f8ebd50ed4a26e0e8410606d6ac62712372502dc158cc60bc6b08079",
   "defects": [
     {
       "id": "cce10eed3843",
@@ -13,34 +13,22 @@
       "name": "Glockenstein"
     },
     {
-      "id": "1e063d015fdb",
-      "severity": "warning",
-      "station": 86,
-      "name": "Bisongehege"
-    },
-    {
-      "id": "8e7c903689b2",
-      "severity": "warning",
-      "station": 97,
-      "name": "Ziegenalm Sophienhof"
-    },
-    {
       "id": "3cd6022158d3",
       "severity": "warning",
       "station": 181,
       "name": "Forstmeister Tannen"
     },
     {
-      "id": "e325583ffef7",
-      "severity": "warning",
-      "station": 205,
-      "name": "Clusberg"
-    },
-    {
       "id": "03fb54c2b3c1",
       "severity": "warning",
       "station": 206,
       "name": "Hahnestein"
+    },
+    {
+      "id": "9b42b572de83",
+      "severity": "warning",
+      "station": 213,
+      "name": "Bauerngraben"
     }
   ],
   "notices": [
