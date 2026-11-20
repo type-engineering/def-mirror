@@ -300,6 +300,10 @@ def main() -> int:
     ap.add_argument("--min-ratio", type=float, default=0.5,
                     help="Schrumpf-Bremse: Mindestanteil der Eintragszahl des "
                          "letzten guten Standes (Vorgabe: 0.5). 0 schaltet sie ab.")
+    ap.add_argument("--accept-shrink", action="store_true",
+                    help="Schrumpf-Bremse übergehen, weil die Quelle nachweislich "
+                         "Einträge entfernt hat (bewusste, manuelle Freigabe). "
+                         "Die Nullregel über alle Kategorien bleibt aktiv.")
     ap.add_argument("--allow-fallback", action="store_true",
                     help="Ernte auch dann übernehmen, wenn sie auf einer "
                          "Rückfallebene entstand, weil der Selektor der "
@@ -345,7 +349,10 @@ def main() -> int:
     # von args.out lesen, sonst vergleicht sie sich mit sich selbst.
     if args.min_ratio > 0:
         urteil = shrink_verdict(buckets, previous_counts(args.out), args.min_ratio)
-        if urteil:
+        if urteil and args.accept_shrink:
+            print(f"WARNUNG: Schrumpf-Bremse — {urteil}. Übernommen, weil "
+                  "--accept-shrink gesetzt ist.", file=sys.stderr)
+        elif urteil:
             print(f"FEHLER: Schrumpf-Bremse — {urteil}. Lasse alten Stand stehen.",
                   file=sys.stderr)
             return 5

@@ -27,6 +27,10 @@ on:
         description: "Auch laufen, wenn heute schon ein Stand ausgeliefert wurde"
         type: boolean
         default: false
+      accept_shrink:
+        description: "Schrumpf-Bremse übergehen (nur nach Prüfung der Quelle: sie hat wirklich Einträge entfernt)"
+        type: boolean
+        default: false
 
 # Zwei gleichzeitige Läufe würden sich beim Push gegenseitig überschreiben.
 # Ein wartender Lauf checkt erst beim Start aus und sieht dann den Stand seines
@@ -115,7 +119,12 @@ jobs:
         run: python tools/test_harvest.py
 
       - name: Ernten
-        run: python tools/harvest.py --out defects.json --source-out defects-source.txt
+        env:
+          ACCEPT_SHRINK: ${{ inputs.accept_shrink || false }}
+        run: |
+          extra=""
+          if [ "${ACCEPT_SHRINK}" = "true" ]; then extra="--accept-shrink"; fi
+          python tools/harvest.py --out defects.json --source-out defects-source.txt ${extra}
 
       # Der leere Stand ist der Fehler, gegen den dieser Feed gebaut ist.
       - name: Nicht leer?
