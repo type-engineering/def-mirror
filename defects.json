@@ -1,30 +1,11 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-18T05:07:31+00:00",
-  "validUntil": "2026-11-25T05:07:31+00:00",
+  "generatedAt": "2026-11-20T17:37:29+00:00",
+  "validUntil": "2026-11-27T17:37:29+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "6cd154c631fd9fcf1c10a0e9f31d8df888d14da0ed94c47f55d50d391f3e19c8",
-  "extractSha256": "942cbeaa8d1f42e913611856228ab8744fc54ea5cbbcda106d3e24ae617bc852",
-  "defects": [
-    {
-      "id": "3cd6022158d3",
-      "severity": "warning",
-      "station": 181,
-      "name": "Forstmeister Tannen"
-    },
-    {
-      "id": "03fb54c2b3c1",
-      "severity": "warning",
-      "station": 206,
-      "name": "Hahnestein"
-    },
-    {
-      "id": "9b42b572de83",
-      "severity": "warning",
-      "station": 213,
-      "name": "Bauerngraben"
-    }
-  ],
+  "sourceSha256": "c2cf6063e30c4f630628e2bdf81447aa9357c593515433c544024f2953b33e0d",
+  "extractSha256": "e0d6f2b65aafe8ff2adc501a0ba2691d41c7f6f00b21b576a2a9da615a611b19",
+  "defects": [],
   "notices": [
     {
       "id": "12e85595d773",
@@ -74,11 +55,6 @@
       "id": "cf524722fddf",
       "severity": "critical",
       "title": "Schausägewerk Ehrt"
-    },
-    {
-      "id": "571d23f62c38",
-      "severity": "critical",
-      "title": "Kartoffelhaus Wernigerode"
     },
     {
       "id": "6dc5f61adfaf",
