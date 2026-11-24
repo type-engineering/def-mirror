@@ -1,11 +1,48 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-23T05:07:31+00:00",
-  "validUntil": "2026-11-30T05:07:31+00:00",
+  "generatedAt": "2026-11-24T05:07:31+00:00",
+  "validUntil": "2026-12-01T05:07:31+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "ed94725f318e3422d2205c39885fd09b3d4974f4919ac4df0ad46d4a051018b7",
-  "extractSha256": "e0d6f2b65aafe8ff2adc501a0ba2691d41c7f6f00b21b576a2a9da615a611b19",
-  "defects": [],
+  "sourceSha256": "9fc9ebd0d454d0a166cbb18fea5d2aca67938be03d1f49651f777261add3f0f2",
+  "extractSha256": "167b19210669d03c67747f284e65857f0e4ae0fcbf4cc5b781c3753e5a06ec73",
+  "defects": [
+    {
+      "id": "3522b24deddf",
+      "severity": "warning",
+      "station": 108,
+      "name": "Sudmerberger Warte"
+    },
+    {
+      "id": "7deb16288881",
+      "severity": "warning",
+      "station": 109,
+      "name": "Heimberg"
+    },
+    {
+      "id": "fb3f8279ccd3",
+      "severity": "warning",
+      "station": 116,
+      "name": "Verlobungsinsel"
+    },
+    {
+      "id": "47f709a9fee0",
+      "severity": "warning",
+      "station": 151,
+      "name": "Ruine Scharzfels"
+    },
+    {
+      "id": "c18bbefa6549",
+      "severity": "warning",
+      "station": 168,
+      "name": "Dreieckiger Pfahl"
+    },
+    {
+      "id": "03fb54c2b3c1",
+      "severity": "warning",
+      "station": 206,
+      "name": "Hahnestein"
+    }
+  ],
   "notices": [
     {
       "id": "12e85595d773",
@@ -52,14 +89,24 @@
   ],
   "closures": [
     {
-      "id": "cf524722fddf",
+      "id": "067322aaf421",
       "severity": "critical",
-      "title": "Schausägewerk Ehrt"
+      "title": "Wald für Morgen"
+    },
+    {
+      "id": "9a86e8f347f1",
+      "severity": "critical",
+      "title": "Harlyturm"
     },
     {
       "id": "6dc5f61adfaf",
       "severity": "critical",
       "title": "Brandberg"
+    },
+    {
+      "id": "3f3a9ea142e8",
+      "severity": "critical",
+      "title": "Grenzturm Rhoden"
     },
     {
       "id": "28a940d7bf6d",
