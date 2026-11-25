@@ -1,10 +1,10 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-24T05:07:31+00:00",
-  "validUntil": "2026-12-01T05:07:31+00:00",
+  "generatedAt": "2026-11-25T05:07:34+00:00",
+  "validUntil": "2026-12-02T05:07:34+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "9fc9ebd0d454d0a166cbb18fea5d2aca67938be03d1f49651f777261add3f0f2",
-  "extractSha256": "167b19210669d03c67747f284e65857f0e4ae0fcbf4cc5b781c3753e5a06ec73",
+  "sourceSha256": "2283206af8aeb94dbcaf0c9cec7ff1f3dd48e8d5392c85e1b58ed8e5a779286e",
+  "extractSha256": "6466dc2f5e382b18c636c004f4fd7187c6625b586d6e134681d3759668b41b6a",
   "defects": [
     {
       "id": "3522b24deddf",
@@ -104,14 +104,14 @@
       "title": "Brandberg"
     },
     {
-      "id": "3f3a9ea142e8",
+      "id": "5685d64d3c72",
       "severity": "critical",
-      "title": "Grenzturm Rhoden"
+      "title": "OHA Harzer Hexenstieg Osterode"
     },
     {
-      "id": "28a940d7bf6d",
+      "id": "d5a7fdf4b300",
       "severity": "critical",
-      "title": "Rund um Quedlinburg – Aholzwarte (entfällt vorläufig!)"
+      "title": "Rund um Quedlinburg – Aholzwarte entfällt!"
     },
     {
       "id": "12126ada2d96",
