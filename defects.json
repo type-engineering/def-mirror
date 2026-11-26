@@ -1,46 +1,22 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-25T05:07:34+00:00",
-  "validUntil": "2026-12-02T05:07:34+00:00",
+  "generatedAt": "2026-11-26T15:27:58+00:00",
+  "validUntil": "2026-12-03T15:27:58+00:00",
   "source": "https://www.harzer-wandernadel.de/defektmeldungen/",
-  "sourceSha256": "2283206af8aeb94dbcaf0c9cec7ff1f3dd48e8d5392c85e1b58ed8e5a779286e",
-  "extractSha256": "6466dc2f5e382b18c636c004f4fd7187c6625b586d6e134681d3759668b41b6a",
+  "sourceSha256": "6b60ac73a859bc278a02f130bed48ea193902847de24eb2fffaa88e056f960d7",
+  "extractSha256": "6b48396a01a7a901d7c16333d0e4c66591a2c4f9c06dfa6ca7eadb162f93688e",
   "defects": [
     {
-      "id": "3522b24deddf",
+      "id": "72332b5cd035",
       "severity": "warning",
-      "station": 108,
-      "name": "Sudmerberger Warte"
-    },
-    {
-      "id": "7deb16288881",
-      "severity": "warning",
-      "station": 109,
-      "name": "Heimberg"
-    },
-    {
-      "id": "fb3f8279ccd3",
-      "severity": "warning",
-      "station": 116,
-      "name": "Verlobungsinsel"
+      "station": 110,
+      "name": "Granestausee"
     },
     {
       "id": "47f709a9fee0",
       "severity": "warning",
       "station": 151,
       "name": "Ruine Scharzfels"
-    },
-    {
-      "id": "c18bbefa6549",
-      "severity": "warning",
-      "station": 168,
-      "name": "Dreieckiger Pfahl"
-    },
-    {
-      "id": "03fb54c2b3c1",
-      "severity": "warning",
-      "station": 206,
-      "name": "Hahnestein"
     }
   ],
   "notices": [
@@ -89,24 +65,9 @@
   ],
   "closures": [
     {
-      "id": "067322aaf421",
-      "severity": "critical",
-      "title": "Wald für Morgen"
-    },
-    {
-      "id": "9a86e8f347f1",
-      "severity": "critical",
-      "title": "Harlyturm"
-    },
-    {
       "id": "6dc5f61adfaf",
       "severity": "critical",
       "title": "Brandberg"
-    },
-    {
-      "id": "5685d64d3c72",
-      "severity": "critical",
-      "title": "OHA Harzer Hexenstieg Osterode"
     },
     {
       "id": "d5a7fdf4b300",
